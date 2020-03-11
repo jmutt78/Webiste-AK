@@ -51,8 +51,8 @@ const Nav2 = styled.div`
     filter: invert(56%) sepia(84%) saturate(444%) hue-rotate(345deg)
       brightness(101%) contrast(94%);
     @media (max-width: 500px) {
-      width: 20;
-      margin: 0px 15px 30px 15px;
+      width: 25px;
+      margin: 0px 10px 0px 0;
       height: auto;
     }
   }
