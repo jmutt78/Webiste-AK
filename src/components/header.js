@@ -1,8 +1,10 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import styled from "styled-components";
+
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+
 import logo from "../images/logo.jpg";
 import FaceBook from "../../assets/facebook.svg";
 import Insta from "../../assets/instagram.svg";
