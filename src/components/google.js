@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 
-const api = process.env.GOOGLE;
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-console.log(api);
+
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
