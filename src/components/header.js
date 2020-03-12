@@ -13,7 +13,7 @@ import Mail from "../../assets/mail.svg";
 
 const StyledNav = styled(Navbar)`
   color: palevioletred;
-  padding: 0em 1em;
+  padding: 0.5em 1em;
   margin: 0 auto;
 
   text-transform: uppercase;
@@ -70,15 +70,6 @@ const Nav2 = styled.div`
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Nav2>
-      <Nav className="ml-auto">
-        <p>(440) 438-3138</p>
-        <FaceBook />
-        <Linkedin />
-        <Insta />
-        <Mail />
-      </Nav>
-    </Nav2>
     <StyledNav bg="transparent" expand="lg">
       <Navbar.Brand href="#home">
         <img
@@ -125,3 +116,13 @@ Header.defaultProps = {
 };
 
 export default Header;
+
+// <Nav2>
+//   <Nav className="ml-auto">
+//     <p>(440) 438-3138</p>
+//     <FaceBook />
+//     <Linkedin />
+//     <Insta />
+//     <Mail />
+//   </Nav>
+// </Nav2>

@@ -66,14 +66,9 @@ export const About = styled(Col)`
   h2 {
     font-family: "brandon-grotesque", Sans-serif;
     font-size: 56px;
-    font-style: normal;
+    font-weight: 300;
     line-height: 1.3em;
     letter-spacing: 1.7px;
-    font-weight: 400;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 1.5em;
-    margin-left: 0px;
   }
 `;
 

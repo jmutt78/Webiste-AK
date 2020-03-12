@@ -11,7 +11,7 @@ export const Root = styled.div`
     background-color: white;
   }
   .carousel-indicators {
-    bottom: -50px;
+    bottom: -80px;
   }
 
   p {
