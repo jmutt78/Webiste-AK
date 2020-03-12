@@ -58,6 +58,9 @@ const Nav2 = styled.div`
       height: auto;
     }
   }
+  @media (max-width: 500px) {
+    display: block;
+  }
 `;
 
 // TODO:
