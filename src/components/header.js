@@ -54,12 +54,12 @@ const Nav2 = styled.div`
       brightness(101%) contrast(94%);
     @media (max-width: 500px) {
       width: 25px;
-      margin: 0px 10px 0px 0;
       height: auto;
+      margin: 0px 10px 0px 0;
     }
   }
   @media (max-width: 500px) {
-    display: block;
+    display: none;
   }
 `;
 
