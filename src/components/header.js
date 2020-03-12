@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 
-import logo from "../images/logo.jpg";
+import logo from "../images/logo-IHM.jpg";
 import FaceBook from "../../assets/facebook.svg";
 import Insta from "../../assets/instagram.svg";
 import Linkedin from "../../assets/linkedin.svg";
@@ -19,6 +19,7 @@ const StyledNav = styled(Navbar)`
   text-transform: uppercase;
   img {
     margin: 0;
+    border-radius: 50%;
   }
   a {
     font-size: 0.813em;
@@ -82,7 +83,7 @@ const Header = ({ siteTitle }) => (
       <Navbar.Brand href="#home">
         <img
           src={logo}
-          width="180"
+          width="100"
           height="auto"
           className="d-inline-block align-top"
           alt="React Bootstrap logo"

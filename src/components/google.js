@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 
+const api = process.env.GOOGLE;
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-console.log(process.env.GOOGLE);
+console.log(api);
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
@@ -16,7 +17,7 @@ class SimpleMap extends Component {
     return (
       <div style={{ height: "40vh", width: "100%" }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: process.env.GOOGLE }}
+          bootstrapURLKeys={{ key: `${process.env.GOOGLE}` }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         ></GoogleMapReact>
