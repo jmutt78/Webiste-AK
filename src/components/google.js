@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
+console.log(process.env.GOOGLE);
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
