@@ -113,7 +113,7 @@ padding-left: 150px;
 `;
 
 export const Root = styled.div`
-  padding: 3rem 1rem 0rem 1rem;
+  padding: 3rem 1rem 1.5rem 1rem;
   border-top: 1px solid #8062c6;
 `;
 
