@@ -5,6 +5,7 @@ import { Jumbotron, Button, Row, Col } from "react-bootstrap";
 import hero from "../../images/hero.jpg";
 
 export const Root = styled.div`
+  padding: 0 0 25px 0;
 h3 {
     text-align center;
     color: #363636;
