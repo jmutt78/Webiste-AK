@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
-console.log(process.env.GOOGLE);
+console.log(process.env.GATSBY_GOOGLE);
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -17,7 +17,7 @@ class SimpleMap extends Component {
     return (
       <div style={{ height: "40vh", width: "100%" }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: `${process.env.GOOGLE}` }}
+          bootstrapURLKeys={{ key: `${process.env.GATSBY_GOOGLE}` }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         ></GoogleMapReact>
