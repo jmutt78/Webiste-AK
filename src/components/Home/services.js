@@ -45,9 +45,6 @@ export const Root = styled.div`
   }
 
   .btn-secondary {
-  }
-
-  .btn-secondary {
     color: #fff;
     background-color: #8062c6 !important;
     margin: 0;
