@@ -43,7 +43,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-   {
+  .btn-outline-secondary {
     color: #fff;
     border-color: #8062c6 !important;
     color: #8062c6 !important;
