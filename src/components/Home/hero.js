@@ -104,31 +104,8 @@ export const AboutContent = styled(Col)`
 export default () => (
   <Root>
     <Hero>
-      <h1>PEACE THROUGH HEALTH</h1>
+      <h1>Your Health Starts Here.</h1>
     </Hero>
-    <h3>
-      You've reached a place where we are here to help you reach a better,
-      healthier, happier state of being on all levels.
-    </h3>
-
-    <AboutRow>
-      <About>
-        <p>-About</p>
-        <h2>Our Approach</h2>
-      </About>
-      <AboutContent>
-        <p>
-          We treat your body as a whole and this includes your foot
-          pain/conditions as well as your stress and emotions. Your emotional
-          state of being affects you physical health. These are connected. We
-          use very specific multidimensional, holistic approaches to help your
-          body heal and uplift you to the best place possible and keep you
-          there. We will work with you to heal and assist you make changes and
-          with this, all around you will change for the better.
-        </p>
-        <Button variant="link">More ></Button>
-      </AboutContent>
-    </AboutRow>
   </Root>
 );
 
