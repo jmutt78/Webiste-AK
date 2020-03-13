@@ -33,6 +33,10 @@ export const Root = styled(MDBContainer)`
 
   @media (max-width: 575px) {
     border-radius: 0;
+    padding: 10px 15px 10px 15px;
+    p {
+      font-size: 15px;
+    }
   }
 `;
 

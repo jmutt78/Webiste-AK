@@ -20,6 +20,11 @@ export const Root = styled.div`
     letter-spacing: 1.7px;
   }
 
+  hr {
+    border-top: 1.5px solid #8062c6;
+    width: 60%;
+  }
+
   h3 {
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
@@ -29,6 +34,7 @@ export const Root = styled.div`
     font-size: 36px;
     line-height: 44px;
   }
+
   p {
     color: #363636;
     font-family: "sofia-pro", Sans-serif;
@@ -37,10 +43,30 @@ export const Root = styled.div`
     line-height: 1.6em;
     letter-spacing: 0.5px;
   }
+
+  .btn-secondary {
+  }
+
+  .btn-secondary {
+    color: #fff;
+    background-color: #8062c6 !important;
+    margin: 0;
+    font-family: "Sf pro display", sans-serif;
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
   @media (max-width: 575px) {
     h3 {
       text-align: center;
       font-size: 30px;
+    }
+
+    hr {
+      border-top: 1px solid #8062c6;
+      width: 100%;
     }
 
     p {
@@ -135,6 +161,7 @@ const Services = () => {
             </ServiceContent>
           )}
           <h3>Functional Medicine Evaluation</h3>
+          <hr />
           <p>
             A new approach to medicine. Functional medicine focuses on the
             patient as a whole to determine the root causes of diseases. It
@@ -142,6 +169,7 @@ const Services = () => {
             do with bodily imbalances and dysfunctions rather than just treating
             the symptoms with multiple medications.
           </p>
+          <Button variant="secondary">Explore Evaluation</Button>
         </ServiceContent>
         {!mobile && (
           <ServiceContent>
@@ -155,6 +183,7 @@ const Services = () => {
         </ServiceContent>
         <ServiceContent>
           <h3>INDIGO Quantum Biofeedback</h3>
+          <hr />
           <p>
             The Indigo Biofeedback is an extraordinary device that gathers
             information and makes assessments regarding the state of the body,
@@ -164,6 +193,7 @@ const Services = () => {
             first three minutes of a session, the device can recalibrate any
             condition or ailment to allow the body to begin healing.
           </p>
+          <Button variant="secondary">Explore IDIGO</Button>
         </ServiceContent>
       </ServiceRow>
       <ServiceRow>
@@ -174,6 +204,7 @@ const Services = () => {
         )}
         <ServiceContent>
           <h3>Stress & Energy Management/Healing</h3>
+          <hr />
           <p>
             How are you handling stress? Do you feel stuck in areas of your
             health? Do you have pain, medical conditions, anxiety, fatigue or
@@ -183,6 +214,7 @@ const Services = () => {
             you to release pain/disease and anxiety and allowing you to return
             to health, joy and vitality. This is a no touch technique.
           </p>
+          <Button variant="secondary">Explore Healing</Button>
         </ServiceContent>
         {!mobile && (
           <ServiceContent>
@@ -196,6 +228,7 @@ const Services = () => {
         </ServiceContent>
         <ServiceContent>
           <h3>Detox Foot Bath</h3>
+          <hr />
           <p>
             The BodyGuard footbath is a foot detoxification method that helps
             give your body a break from toxins. The ionic footbath helps pull
@@ -203,6 +236,7 @@ const Services = () => {
             radicals from the body as the probes work to help eradicate viruses,
             bacteria, fungus, and parasites.
           </p>
+          <Button variant="secondary">Explore Detox</Button>
         </ServiceContent>
       </ServiceRow>
     </Root>
