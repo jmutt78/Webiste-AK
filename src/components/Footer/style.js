@@ -213,7 +213,7 @@ export const SocailContainer = styled.div`
     margin-bottom: 0px;
     padding-top: 10px;
     flex-direction: row;
-    order: 1;
+
     h4 {
       display: none;
     }
