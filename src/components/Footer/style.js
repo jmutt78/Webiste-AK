@@ -52,15 +52,7 @@ export const CTAContainer = styled.div`
     line-height: 28px;
   }
 
-  @media screen and (max-width: 991px) {
-    width: 100%;
-    padding-top: 10px;
-    text-align: center;
-    justify-content: flex-start;
-    order: 1;
-  }
-
-  @media (max-width: 575px) {
+  @media (max-width: 750px) {
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -81,7 +73,7 @@ export const ImageContainer = styled.div`
   align-items: flex-start;
   border-right: 1px solid #8062c6;
 
-  @media (max-width: 575px) {
+  @media (max-width: 750px) {
     width: 100%;
     margin-bottom: 5px;
     justify-content: center;
@@ -212,7 +204,6 @@ export const SocailContainer = styled.div`
   h4 {
     margin-top: 0px;
     margin-bottom: 30px;
-
     font-size: 20px;
     line-height: 18px;
     font-weight: 700;
@@ -221,7 +212,6 @@ export const SocailContainer = styled.div`
     width: 100%;
     margin-bottom: 0px;
     padding-top: 10px;
-    flex: 0 auto;
     flex-direction: row;
     order: 1;
     h4 {
