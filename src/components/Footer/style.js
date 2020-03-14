@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Root = styled.div`
   padding: 25px 25px 25px 25px;
   margin: 0 auto 0 auto;
-  max-width: 1200px;
+  max-width: 1280px;
   font-family: "sofia-pro", Sans-serif;
 `;
 
@@ -19,6 +19,11 @@ export const TopContainer = styled.div`
     justify-content: center;
     border-radius: 50%;
   }
+
+  @media (max-width: 575px) {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
 `;
 
 export const CollumnContainer = styled.div`
@@ -27,6 +32,10 @@ export const CollumnContainer = styled.div`
   flex-wrap: wrap;
   box-sizing: border-box;
   webkit-box-direction: normal;
+
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const CTAContainer = styled.div`
@@ -42,6 +51,27 @@ export const CTAContainer = styled.div`
     font-size: 28px;
     line-height: 28px;
   }
+
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    order: 1;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    h3 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.2em;
+    }
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -50,6 +80,14 @@ export const ImageContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   border-right: 1px solid #8062c6;
+
+  @media (max-width: 575px) {
+    width: 100%;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    border-right-style: none;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -66,6 +104,12 @@ export const ButtonContainer = styled.div`
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    justify-content: center;
+    order: 1;
   }
 `;
 
@@ -97,6 +141,19 @@ export const HoursContainer = styled.div`
   .wrapper {
     display: block;
   }
+  @media (max-width: 575px) {
+    order: 1;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 0;
+    }
+  }
 `;
 
 export const ServicesContainer = styled.div`
@@ -124,6 +181,16 @@ export const ServicesContainer = styled.div`
     line-height: 18px;
     font-weight: 700;
   }
+  @media (max-width: 575px) {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    border-bottom: 1px solid #8062c6;
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 export const SocailContainer = styled.div`
@@ -140,11 +207,6 @@ export const SocailContainer = styled.div`
     cursor: pointer;
     filter: invert(46%) sepia(9%) saturate(3109%) hue-rotate(217deg)
       brightness(91%) contrast(91%);
-    @media (max-width: 575px) {
-      width: 25px;
-      margin: 0px 10px 0px 0;
-      height: auto;
-    }
   }
 
   h4 {
@@ -154,6 +216,22 @@ export const SocailContainer = styled.div`
     font-size: 20px;
     line-height: 18px;
     font-weight: 700;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    flex: 0 auto;
+    flex-direction: row;
+    order: 1;
+    h4 {
+      display: none;
+    }
+    svg {
+      width: 35px;
+      height: auto;
+      margin: 0px 5px 0px 5px;
+    }
   }
 `;
 
@@ -207,6 +285,28 @@ export const BottomContainer = styled.div`
     justify-content: flex-end;
     align-items: center;
   }
+
+  @media (max-width: 575px) {
+    padding-top: 23px;
+    padding-bottom: 22px;
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .middle {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .right {
+      width: 100%;
+      margin-bottom: 0px;
+      order: 1;
+    }
+  }
 `;
 
 export const FooterContainer = styled.div`
@@ -216,4 +316,9 @@ export const FooterContainer = styled.div`
   align-items: center;
   border-top: 1px none rgba(190, 199, 195, 0.6);
   font-size: 14px;
+
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+    border-top-style: solid;
+  }
 `;
