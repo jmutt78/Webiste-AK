@@ -137,7 +137,7 @@ export const HoursContainer = styled.div`
     order: 1;
     width: 100%;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 25px;
 
     h4 {
       margin-bottom: 10px;
@@ -175,7 +175,7 @@ export const ServicesContainer = styled.div`
   }
   @media (max-width: 575px) {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-bottom: 5px;
     justify-content: center;
     border-bottom: 1px solid #8062c6;

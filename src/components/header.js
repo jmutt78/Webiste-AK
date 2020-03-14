@@ -35,31 +35,26 @@ const StyledNav = styled(Navbar)`
   }
 `;
 
-const Nav2 = styled.div`
-  background-color: #8062c6;
-  padding: 0.5em 1em;
-  align-items: center;
+export const ButtonContainer = styled.div`
   display: flex;
-  p {
-    margin: 0px 10px 0px 0;
-    color: #f79532;
-    font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  .btn-outline-secondary {
+    color: #fff;
+    border-color: #8062c6 !important;
+    color: #8062c6 !important;
+    margin: 0;
+    font-family: "Sf pro display", sans-serif;
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
-  svg {
-    width: 30px;
-    height: auto;
-    margin: 0px 10px 0px 0;
-    cursor: pointer;
-
-    filter: invert(56%) sepia(84%) saturate(444%) hue-rotate(345deg)
-      brightness(101%) contrast(94%);
-    @media (max-width: 500px) {
-      width: 25px;
-      height: auto;
-      margin: 0px 10px 0px 0;
-    }
+  @media (max-width: 575px) {
+    display: none;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1077px) {
     display: none;
   }
 `;
@@ -96,13 +91,15 @@ const Header = ({ siteTitle }) => (
             </NavDropdown.Item>
             <NavDropdown.Item>Detox Foot Bath</NavDropdown.Item>
           </NavDropdown>
-
           <Nav.Link>New Patient</Nav.Link>
           <Nav.Link>Schedule Appointment</Nav.Link>
           <Nav.Link>Blog</Nav.Link>
           <Nav.Link>Contact Us</Nav.Link>
         </Nav>
       </Navbar.Collapse>
+      <ButtonContainer>
+        <Button variant="outline-secondary">BOOK NOW</Button>
+      </ButtonContainer>
     </StyledNav>
   </header>
 );
