@@ -210,10 +210,11 @@ export const SocailContainer = styled.div`
   }
   @media (max-width: 575px) {
     width: 100%;
+    display: block;
     margin-bottom: 0px;
     padding-top: 10px;
     flex-direction: row;
-
+    order: 1;
     h4 {
       display: none;
     }
