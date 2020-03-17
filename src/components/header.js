@@ -37,7 +37,6 @@ const StyledNav = styled(Navbar)`
 
   a {
     color: #36454f;
-
   }
 
   .navbar-toggler-icon {
@@ -83,6 +82,7 @@ const StyledNav = styled(Navbar)`
       display: none;
     }
   }
+
 .acord {
   padding-bottom 30px;
 }
@@ -104,7 +104,7 @@ const StyledNav = styled(Navbar)`
   .menu-collapse {
     width: 100%;
     display: flex;
-
+    background-color: #f9f7ff;
     flex-direction: column;
     align-items: center;
     padding-top: 16px;
