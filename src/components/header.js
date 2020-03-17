@@ -23,17 +23,29 @@ const StyledNav = styled(Navbar)`
   padding: 0.5em 1em;
   margin: 0 auto;
 
+  .dropdown-toggle.nav-link {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+
   i {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin: 0 0px 3px 5px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0px 3px 5px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 
   a {
     color: #36454f;
@@ -109,9 +121,7 @@ const StyledNav = styled(Navbar)`
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
-
     justify-content: center;
-
     border-top: 1px solid #8062c6;
     a {
       color: #36454f;
@@ -131,6 +141,11 @@ const StyledNav = styled(Navbar)`
   }
   @media (max-width: 1077px) {
     padding: 0;
+  }
+
+  button {
+    border: 0;
+    background: transparent;
   }
 `;
 
