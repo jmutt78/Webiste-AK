@@ -1,8 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 
 import { Button } from "react-bootstrap";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
 import {
   Root,
   TopContainer,
