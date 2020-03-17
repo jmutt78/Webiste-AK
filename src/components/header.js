@@ -225,14 +225,16 @@ const Header = ({ siteTitle }) => {
   return (
     <header>
       <StyledNav bg="transparent" expand="lg">
-        <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            width="100"
-            height="auto"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
+        <Navbar.Brand>
+          <Link to="/">
+            <img
+              src={logo}
+              width="100"
+              height="auto"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>

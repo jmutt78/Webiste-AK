@@ -135,26 +135,18 @@ const services = [
     button: "Evaluation"
   },
   {
-    title: "INDIGO Quantum Biofeedback",
-    content: `The Indigo Biofeedback is an extraordinary device that gathers
-                information and makes assessments regarding the state of the body,
-                health status, condition and stress level in very deep detail. The
-                treatment is painless, and patients stay in a comfortable, relaxed
-                position. After assessments are made, which begin to occur in the
-                first three minutes of a session, the device can recalibrate any
-                condition or ailment to allow the body to begin healing.`,
+    title: "Indigo Quantum Biofeedback",
+    content: ` The Indigo Biofeedback is an extraordinary device that is a looking glass into the body. It gathers information and makes assessments regarding the state of the body, health status, condition and stress level in very deep detail. The treatment is painless, and patients stay in a comfortable, relaxed position. After assessments are made, which begin to occur in the first three minutes of a session, the device can recalibrate any condition or ailment to allow the body to begin healing.
+The initial session is approximately 1.5 hours. Follow up sessions are 1 hour.
+`,
     image: wellness,
-    button: "IDIGO"
+    button: "Indigo"
   },
   {
     title: "Stress & Energy Management/Healing",
-    content: `How are you handling stress? Do you feel stuck in areas of your
-    health? Do you have pain, medical conditions, anxiety, fatigue or
-    any condition that is not allowing you the ease of life? In these
-    sessions, advanced energetic technologies are used to clean and
-    clear out areas of the body and mind that are congested, allowing
-    you to release pain/disease and anxiety and allowing you to return
-    to health, joy and vitality. This is a no touch technique.`,
+    content: `Stress is on the rise. How are you navigating through it? Is it having a negative impact on you? Are you feeling anxious, fatigued, sick, getting common colds frequently or other unresolved conditions? Do you suffer from more severe ailments or conditions such as anxiety, depression, pain, fibromyalgia, rheumatoid arthritis?
+The energy of stress can cause the body to have decreased ability to deal with disease and stress.
+`,
     image: stress,
     button: "Healing"
   },
