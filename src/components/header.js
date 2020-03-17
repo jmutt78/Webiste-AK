@@ -23,10 +23,12 @@ const StyledNav = styled(Navbar)`
   padding: 0.5em 1em;
   margin: 0 auto;
 
+
+
   .dropdown-toggle.nav-link {
     display: block;
     width: 100%;
-    padding: .25rem 1.5rem;
+
     clear: both;
     text-align: inherit;
     white-space: nowrap;
@@ -94,6 +96,14 @@ const StyledNav = styled(Navbar)`
       display: none;
     }
   }
+
+
+.navbar-nav  a:hover,
+.navbar-nav a:focus {
+  color: #8062c6;
+  font-weight: 600;
+  background-color: transparent;
+}
 
 .acord {
   padding-bottom 30px;
@@ -291,9 +301,9 @@ const Header = ({ siteTitle }) => {
             ))}
           </NavDropdown>
           {otherLink.map(({ title, link }) => (
-            <NavDropdown.Item key={title}>
+            <Nav.Link key={title}>
               <Link to={link}>{title}</Link>
-            </NavDropdown.Item>
+            </Nav.Link>
           ))}
         </Nav>
         <ButtonContainer>
