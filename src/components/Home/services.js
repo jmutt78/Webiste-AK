@@ -157,7 +157,7 @@ const Services = () => {
               <ImageContainer image={medical} />
             </ServiceContent>
           )}
-          <h3>Functional Medicine Evaluation</h3>
+          <h3>Functional Medicine</h3>
           <hr />
           <p>
             A new approach to medicine. Functional medicine focuses on the

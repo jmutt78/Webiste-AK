@@ -3,35 +3,134 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Button,
+  Card,
+  Accordion
+} from "react-bootstrap";
 
 import logo from "../images/logo-IHM.jpg";
-import FaceBook from "../../assets/facebook.svg";
-import Insta from "../../assets/instagram.svg";
-import Linkedin from "../../assets/linkedin.svg";
-import Mail from "../../assets/mail.svg";
 
 const StyledNav = styled(Navbar)`
-  color: palevioletred;
+  font-family: sofia-pro, sans-serif;
+  color: #36454f;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
   padding: 0.5em 1em;
   margin: 0 auto;
 
-  text-transform: uppercase;
+  i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 0 0px 3px 5px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+  a {
+    color: #36454f;
+
+  }
+
+  .navbar-toggler-icon {
+    @media (max-width: 575px) {
+      padding: 10px;
+    }
+    @media (max-width: 1077px) {
+      padding: 10px;
+    }
+  }
+
   img {
     margin: 0;
     border-radius: 50%;
+    @media (max-width: 575px) {
+      padding: 10px;
+    }
+    @media (max-width: 1077px) {
+      padding: 10px;
+    }
   }
-  a {
-    font-size: 0.813em;
-  }
-  .dropdown-menu {
+
+  .dropdown-menu a {
+    color: #36454f;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
     background-color: white;
   }
+
   .dropdown-menu a:hover,
   .dropdown-menu a:focus {
     color: #8062c6;
     font-weight: 600;
     background-color: white;
+  }
+
+  .ml-auto {
+    @media (max-width: 575px) {
+      display: none;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+.acord {
+  padding-bottom 30px;
+}
+  .accordion {
+    width: 100%;
+    padding: 30px 0 0 0;
+    border-bottom: 1px solid #8062c6;
+
+    font-family: sofia-pro, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: 991px) {
+      display: none;
+    }
+  }
+  .menu-collapse {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    justify-content: center;
+
+    border-top: 1px solid #8062c6;
+    a {
+      color: #36454f;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+  .menu-collapse a:hover,
+  .menu-collapse a:focus {
+    color: #8062c6;
+    font-weight: 600;
+    background-color: white;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+  @media (max-width: 1077px) {
+    padding: 0;
   }
 `;
 
@@ -59,50 +158,134 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-// TODO:
-//Refactor into an arrary for the links and the social icons
-// Toupper for text
+const Header = ({ siteTitle }) => {
+  const aboutLink = [
+    {
+      title: "Dr. Krywiak",
+      link: "/DrKrywiak"
+    },
+    {
+      title: "IHM",
+      link: "/ihm"
+    },
+    {
+      title: "Testimonials",
+      link: "/testimonials"
+    }
+  ];
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <StyledNav bg="transparent" expand="lg">
-      <Navbar.Brand href="#home">
-        <img
-          src={logo}
-          width="100"
-          height="auto"
-          className="d-inline-block align-top"
-          alt="React Bootstrap logo"
-        />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse>
+  const serviceLink = [
+    {
+      title: "Functional Medicine",
+      link: "/services/functional-medicine"
+    },
+    {
+      title: "INDIGO Quantum Biofeedback",
+      link: "/services/indigo"
+    },
+    {
+      title: "Stress & Energy Management/Healing",
+      link: "/services/stress-energy-healing"
+    },
+    {
+      title: "Detox Foot Bath",
+      link: "/services/detox-foot-bath"
+    }
+  ];
+
+  const otherLink = [
+    {
+      title: "New Patient",
+      link: "/new-patient"
+    },
+    {
+      title: "Blog",
+      link: "/blog"
+    },
+    {
+      title: "Contact Us",
+      link: "/contact-us"
+    }
+  ];
+  return (
+    <header>
+      <StyledNav bg="transparent" expand="lg">
+        <Navbar.Brand href="#home">
+          <img
+            src={logo}
+            width="100"
+            height="auto"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse>
+          <Accordion>
+            <Accordion.Toggle eventKey="0">
+              <div className="acord">
+                About Us <i className="arrow down"></i>
+              </div>
+            </Accordion.Toggle>
+            {aboutLink.map(({ title, link }) => (
+              <Accordion.Collapse eventKey="0" key={title}>
+                <div className="menu-collapse">
+                  <Link to={link}>{title}</Link>
+                </div>
+              </Accordion.Collapse>
+            ))}
+          </Accordion>
+          <Accordion>
+            <Accordion.Toggle eventKey="1">
+              <div className="acord">
+                Our Services <i className="arrow down"></i>
+              </div>
+            </Accordion.Toggle>
+            {serviceLink.map(({ title, link }) => (
+              <Accordion.Collapse eventKey="1" key={title}>
+                <div className="menu-collapse">
+                  <Link to={link}>{title}</Link>
+                </div>
+              </Accordion.Collapse>
+            ))}
+          </Accordion>
+          {otherLink.map(({ title, link }) => (
+            <Accordion key={title}>
+              <div className="acord">
+                <Link to={link}>{title}</Link>
+              </div>
+            </Accordion>
+          ))}
+        </Navbar.Collapse>
+
         <Nav className="ml-auto">
           <NavDropdown title="About Us" id="basic-nav-dropdown">
-            <NavDropdown.Item>Dr. Krywiak</NavDropdown.Item>
-            <NavDropdown.Item>IHM</NavDropdown.Item>
-            <NavDropdown.Item>Testimonials</NavDropdown.Item>
+            {aboutLink.map(({ title, link }) => (
+              <NavDropdown.Item key={title}>
+                <Link to={link}>{title}</Link>
+              </NavDropdown.Item>
+            ))}
           </NavDropdown>
           <NavDropdown title="Our Services" id="basic-nav-dropdown">
-            <NavDropdown.Item>Functional Medicine Evaluation</NavDropdown.Item>
-            <NavDropdown.Item>INDIGO Quantum Biofeedback</NavDropdown.Item>
-            <NavDropdown.Item>
-              Stress & Energy Management/Healing
-            </NavDropdown.Item>
-            <NavDropdown.Item>Detox Foot Bath</NavDropdown.Item>
+            {serviceLink.map(({ title, link }) => (
+              <NavDropdown.Item key={title}>
+                <Link to={link}>{title}</Link>
+              </NavDropdown.Item>
+            ))}
           </NavDropdown>
-          <Nav.Link>New Patient</Nav.Link>
-          <Nav.Link>Schedule Appointment</Nav.Link>
-          <Nav.Link>Blog</Nav.Link>
-          <Nav.Link>Contact Us</Nav.Link>
+          {otherLink.map(({ title, link }) => (
+            <NavDropdown.Item key={title}>
+              <Link to={link}>{title}</Link>
+            </NavDropdown.Item>
+          ))}
         </Nav>
-      </Navbar.Collapse>
-      <ButtonContainer>
-        <Button variant="outline-secondary">BOOK NOW</Button>
-      </ButtonContainer>
-    </StyledNav>
-  </header>
-);
+        <ButtonContainer>
+          <Button variant="outline-secondary">BOOK NOW</Button>
+        </ButtonContainer>
+      </StyledNav>
+    </header>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string
@@ -113,13 +296,3 @@ Header.defaultProps = {
 };
 
 export default Header;
-
-// <Nav2>
-//   <Nav className="ml-auto">
-//     <p>(440) 438-3138</p>
-//     <FaceBook />
-//     <Linkedin />
-//     <Insta />
-//     <Mail />
-//   </Nav>
-// </Nav2>
