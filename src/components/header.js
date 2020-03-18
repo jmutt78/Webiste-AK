@@ -183,6 +183,17 @@ export const ButtonContainer = styled.div`
   }
 `;
 
+export const LinkContainer = styled.div`
+  display: block;
+  width: 100%;
+  clear: both;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  padding: 0.5rem 1rem;
+`;
+
 const Header = ({ siteTitle }) => {
   const aboutLink = [
     {
@@ -301,9 +312,9 @@ const Header = ({ siteTitle }) => {
             ))}
           </NavDropdown>
           {otherLink.map(({ title, link }) => (
-            <Nav.Link key={title}>
+            <LinkContainer key={title}>
               <Link to={link}>{title}</Link>
-            </Nav.Link>
+            </LinkContainer>
           ))}
         </Nav>
         <ButtonContainer>

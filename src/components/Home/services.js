@@ -87,7 +87,19 @@ export const ServiceRow = styled(Row)`
 
 export const ServiceContent = styled(Col)`
   margin: 0 4rem 0 4rem;
+  order: ${props => props.num};
+  @media (max-width: 975px) {
+    margin: 10px 0 10px 0;
+  }
 
+  @media (max-width: 645px) {
+    order: 1;
+  }
+`;
+
+export const ImageContent = styled(Col)`
+  margin: 0 4rem 0 4rem;
+  order: 1;
   @media (max-width: 975px) {
     margin: 10px 0 10px 0;
   }
@@ -115,129 +127,73 @@ export const ImageContainer = styled.div`
   }
 `;
 
-// Hook
-function useWindowSize() {
-  const isClient = typeof window === "object";
-
-  function getSize() {
-    return {
-      width: isClient ? window.innerWidth : undefined,
-      height: isClient ? window.innerHeight : undefined
-    };
+const services = [
+  {
+    title: "Functional Medicine",
+    content: `A new approach to medicine. Functional medicine focuses on the
+                patient as a whole to determine the root causes of diseases. It
+                involves processes to evaluate underlying factors that may have to
+                do with bodily imbalances and dysfunctions rather than just treating
+                the symptoms with multiple medications.`,
+    image: medical,
+    button: "Evaluation"
+  },
+  {
+    title: "Indigo Quantum Biofeedback",
+    content: ` The Indigo Biofeedback is an extraordinary device that is a looking glass into the body. It gathers information and makes assessments regarding the state of the body, health status, condition and stress level in very deep detail. The treatment is painless, and patients stay in a comfortable, relaxed position. After assessments are made, which begin to occur in the first three minutes of a session, the device can recalibrate any condition or ailment to allow the body to begin healing.
+The initial session is approximately 1.5 hours. Follow up sessions are 1 hour.
+`,
+    image: wellness,
+    button: "Indigo"
+  },
+  {
+    title: "Stress & Energy Management/Healing",
+    content: `Stress is on the rise. How are you navigating through it? Is it having a negative impact on you? Are you feeling anxious, fatigued, sick, getting common colds frequently or other unresolved conditions? Do you suffer from more severe ailments or conditions such as anxiety, depression, pain, fibromyalgia, rheumatoid arthritis?
+The energy of stress can cause the body to have decreased ability to deal with disease and stress.
+`,
+    image: stress,
+    button: "Healing"
+  },
+  {
+    title: "Detox Foot Bath",
+    content: `The BodyGuard footbath is a foot detoxification method that helps
+    give your body a break from toxins. The ionic footbath helps pull
+    toxins, chemicals, poisons, pesticides, heavy metals, and free
+    radicals from the body as the probes work to help eradicate viruses,
+    bacteria, fungus, and parasites.`,
+    image: detox,
+    button: "Detox"
   }
+];
 
-  const [windowSize, setWindowSize] = useState(getSize);
+const value1 = 0;
+const value2 = 1;
+const length = services.length;
 
-  useEffect(() => {
-    if (!isClient) {
-      return false;
-    }
+const result = Array.from({ length }).map((e, ndx) =>
+  ndx % 2 ? value2 : value1
+);
 
-    function handleResize() {
-      setWindowSize(getSize());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty array ensures that effect is only run on mount and unmount
-
-  return windowSize;
-}
+services.forEach((a, i) => {
+  a.num = result[i];
+});
 
 const Services = () => {
-  const size = useWindowSize();
-  const mobile = size.width <= "975";
-
   return (
     <Root>
-      <ServiceRow>
-        <ServiceContent>
-          {mobile && (
-            <ServiceContent>
-              <ImageContainer image={medical} />
-            </ServiceContent>
-          )}
-          <h3>Functional Medicine</h3>
-          <hr />
-          <p>
-            A new approach to medicine. Functional medicine focuses on the
-            patient as a whole to determine the root causes of diseases. It
-            involves processes to evaluate underlying factors that may have to
-            do with bodily imbalances and dysfunctions rather than just treating
-            the symptoms with multiple medications.
-          </p>
-          <Button variant="secondary">Explore Evaluation</Button>
-        </ServiceContent>
-        {!mobile && (
-          <ServiceContent>
-            <ImageContainer image={medical} />
+      {services.map(({ title, content, image, button, num }) => (
+        <ServiceRow>
+          <ServiceContent num={num}>
+            <ImageContainer image={image} />
           </ServiceContent>
-        )}
-      </ServiceRow>
-      <ServiceRow>
-        <ServiceContent>
-          <ImageContainer image={wellness} />
-        </ServiceContent>
-        <ServiceContent>
-          <h3>Indigo Quantum Biofeedback</h3>
-          <hr />
-          <p>
-            The Indigo Biofeedback is an extraordinary device that is a looking
-            glass into the body. It gathers information and makes assessments
-            regarding the state of the body, health status, condition and stress
-            level in very deep detail. The treatment is painless, and patients
-            stay in a comfortable, relaxed position. After assessments are made,
-            which begin to occur in the first three minutes of a session, the
-            device can recalibrate any condition or ailment to allow the body to
-            begin healing. The initial session is approximately 1.5 hours.
-            Follow up sessions are 1 hour.
-          </p>
-          <Button variant="secondary">Explore Indigo</Button>
-        </ServiceContent>
-      </ServiceRow>
-      <ServiceRow>
-        {mobile && (
           <ServiceContent>
-            <ImageContainer image={stress} />
+            <h3>{title}</h3>
+            <hr />
+            <p>{content}</p>
+            <Button variant="secondary">Explore {button}</Button>
           </ServiceContent>
-        )}
-        <ServiceContent>
-          <h3>Stress & Energy Management/Healing</h3>
-          <hr />
-          <p>
-            Stress is on the rise. How are you navigating through it? Is it
-            having a negative impact on you? Are you feeling anxious, fatigued,
-            sick, getting common colds frequently or other unresolved
-            conditions? Do you suffer from more severe ailments or conditions
-            such as anxiety, depression, pain, fibromyalgia, rheumatoid
-            arthritis? The energy of stress can cause the body to have decreased
-            ability to deal with disease and stress.
-          </p>
-          <Button variant="secondary">Explore Healing</Button>
-        </ServiceContent>
-        {!mobile && (
-          <ServiceContent>
-            <ImageContainer image={stress} />
-          </ServiceContent>
-        )}
-      </ServiceRow>
-      <ServiceRow>
-        <ServiceContent>
-          <ImageContainer image={detox} />
-        </ServiceContent>
-        <ServiceContent>
-          <h3>Detox Foot Bath</h3>
-          <hr />
-          <p>
-            The BodyGuard footbath is a foot detoxification method that helps
-            give your body a break from toxins. The ionic footbath helps pull
-            toxins, chemicals, poisons, pesticides, heavy metals, and free
-            radicals from the body as the probes work to help eradicate viruses,
-            bacteria, fungus, and parasites.
-          </p>
-          <Button variant="secondary">Explore Detox</Button>
-        </ServiceContent>
-      </ServiceRow>
+        </ServiceRow>
+      ))}
     </Root>
   );
 };
