@@ -39,7 +39,7 @@ export const ButtonContainer = styled.div`
 export const Hero = styled(Jumbotron)`
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${hero});
-
+  background-position: center;
   background-size: cover;
   height: 100%;
   width: auto;

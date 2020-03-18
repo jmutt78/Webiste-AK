@@ -196,10 +196,6 @@ const Header = ({ siteTitle }) => {
     {
       title: "IHM",
       link: "/ihm"
-    },
-    {
-      title: "Testimonials",
-      link: "/testimonials"
     }
   ];
 
@@ -223,6 +219,14 @@ const Header = ({ siteTitle }) => {
   ];
 
   const otherLink = [
+    {
+      title: "About Us",
+      link: "/about-us"
+    },
+    {
+      title: "Testimonials",
+      link: "/testimonials"
+    },
     {
       title: "New Patient",
       link: "/new-patient"
@@ -253,20 +257,6 @@ const Header = ({ siteTitle }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Accordion>
-            <Accordion.Toggle eventKey="0">
-              <div className="acord">
-                About Us <i className="arrow down"></i>
-              </div>
-            </Accordion.Toggle>
-            {aboutLink.map(({ title, link }) => (
-              <Accordion.Collapse eventKey="0" key={title}>
-                <div className="menu-collapse">
-                  <Link to={link}>{title}</Link>
-                </div>
-              </Accordion.Collapse>
-            ))}
-          </Accordion>
-          <Accordion>
             <Accordion.Toggle eventKey="1">
               <div className="acord">
                 Our Services <i className="arrow down"></i>
@@ -290,13 +280,6 @@ const Header = ({ siteTitle }) => {
         </Navbar.Collapse>
 
         <Nav className="ml-auto">
-          <NavDropdown title="About Us" id="basic-nav-dropdown">
-            {aboutLink.map(({ title, link }) => (
-              <NavDropdown.Item key={title}>
-                <Link to={link}>{title}</Link>
-              </NavDropdown.Item>
-            ))}
-          </NavDropdown>
           <NavDropdown title="Our Services" id="basic-nav-dropdown">
             {serviceLink.map(({ title, link }) => (
               <NavDropdown.Item key={title}>
