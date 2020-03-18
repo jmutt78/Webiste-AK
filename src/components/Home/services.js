@@ -182,7 +182,7 @@ const Services = () => {
   return (
     <Root>
       {services.map(({ title, content, image, button, num }) => (
-        <ServiceRow>
+        <ServiceRow key={title}>
           <ServiceContent num={num}>
             <ImageContainer image={image} />
           </ServiceContent>

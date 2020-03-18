@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 import { Button, Row, Col, Image } from "react-bootstrap";
 import store from "../../images/store.jpg";
@@ -93,7 +94,9 @@ export default () => (
           best and healthiest highest whole... that you already are!!
         </h3>
         <ButtonContainer>
-          <Button variant="secondary">Contact Us</Button>
+          <Link to="/contact-us">
+            <Button variant="secondary">Contact Us</Button>
+          </Link>
         </ButtonContainer>
       </Col>
     </RowContainer>

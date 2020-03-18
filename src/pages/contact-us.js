@@ -137,7 +137,7 @@ const ContactUs = () => (
         <MDBCol lg="6" className="lg-0 mb-4">
           <MDBRow>
             {cardArr.map(({ title, content, image }) => (
-              <CardContainer md="6">
+              <CardContainer md="6" key={title}>
                 <Card>
                   <MDBCardBody>
                     <IconContainer>{image}</IconContainer>
