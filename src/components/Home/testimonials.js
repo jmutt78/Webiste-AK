@@ -5,8 +5,6 @@ import {
   MDBCarousel,
   MDBCarouselInner,
   MDBCarouselItem,
-  MDBTestimonial,
-  MDBAvatar,
   MDBIcon
 } from "mdbreact";
 

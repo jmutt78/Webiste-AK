@@ -3,14 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Button,
-  Card,
-  Accordion
-} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Button, Accordion } from "react-bootstrap";
 
 import logo from "../images/logo-IHM.jpg";
 

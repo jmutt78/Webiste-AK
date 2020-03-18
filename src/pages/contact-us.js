@@ -4,15 +4,7 @@ import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import {
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBIcon,
-  MDBBtn,
-  MDBInput
-} from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
 
 import { Button } from "react-bootstrap";
 
@@ -47,7 +39,15 @@ export const Card = styled(MDBCard)`
   margin: 0 10px 0 10px;
   width: 16rem;
   height: 16rem;
-
+  a {
+    font-family: sofia-pro, sans-serif;
+    color: #8062c6;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+  }
   h3 {
     margin-bottom: 30px;
     color: #36454f;
@@ -65,7 +65,7 @@ export const IconContainer = styled.div`
     width: 80px;
     height: 80px;
     margin: 0px 10px 0px 0;
-    cursor: pointer;
+
     filter: invert(46%) sepia(9%) saturate(3109%) hue-rotate(217deg)
       brightness(91%) contrast(91%);
     margin: 25px auto 25px auto;
@@ -99,6 +99,33 @@ export const CardContainer = styled(MDBCol)`
   }
 `;
 
+const cardArr = [
+  {
+    title: "Book Appointment",
+    content: <Button variant="outline-secondary">BOOK NOW</Button>,
+    image: <Calendar />
+  },
+  {
+    title: "Visit Us",
+    content: (
+      <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11969.885388320583!2d-81.940894!3d41.4072858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f79221f3c351936!2sAdriana%20Krywiak%20DPM%2C%20CFMD%2C%20QBT!5e0!3m2!1sen!2sus!4v1584478625048!5m2!1sen!2sus">
+        28873 Lorain Rd North Olmsted, OH 44070
+      </a>
+    ),
+    image: <Compass />
+  },
+  {
+    title: "Call Us",
+    content: <a href="tel:440-438-3138">(440) 438-3138</a>,
+    image: <Phone />
+  },
+  {
+    title: "Email Us",
+    content: <a href="mailto:drk@ihmohio.com">drk@ihmohio.com</a>,
+    image: <Mail />
+  }
+];
+
 const ContactUs = () => (
   <Layout>
     <SEO title="Contact Us" />
@@ -109,52 +136,17 @@ const ContactUs = () => (
       <MDBRow>
         <MDBCol lg="6" className="lg-0 mb-4">
           <MDBRow>
-            <CardContainer md="6">
-              <Card>
-                <MDBCardBody>
-                  <IconContainer>
-                    <Calendar />
-                  </IconContainer>
-                  <h3>Book Appointment</h3>
-                  <ButtonContainer>
-                    <Button variant="outline-secondary">BOOK NOW</Button>
-                  </ButtonContainer>
-                </MDBCardBody>
-              </Card>
-            </CardContainer>
-            <CardContainer md="6">
-              <Card>
-                <MDBCardBody>
-                  <IconContainer>
-                    <Compass />
-                  </IconContainer>
-                  <h3>Visit Us</h3>
-                  <ButtonContainer></ButtonContainer>
-                </MDBCardBody>
-              </Card>
-            </CardContainer>
-            <CardContainer md="6">
-              <Card>
-                <MDBCardBody>
-                  <IconContainer>
-                    <Phone />
-                  </IconContainer>
-                  <h3>Call Us</h3>
-                  <ButtonContainer></ButtonContainer>
-                </MDBCardBody>
-              </Card>
-            </CardContainer>
-            <CardContainer md="6">
-              <Card>
-                <MDBCardBody>
-                  <IconContainer>
-                    <Mail />
-                  </IconContainer>
-                  <h3>Email Us</h3>
-                  <ButtonContainer></ButtonContainer>
-                </MDBCardBody>
-              </Card>
-            </CardContainer>
+            {cardArr.map(({ title, content, image }) => (
+              <CardContainer md="6">
+                <Card>
+                  <MDBCardBody>
+                    <IconContainer>{image}</IconContainer>
+                    <h3>{title}</h3>
+                    <ButtonContainer>{content}</ButtonContainer>
+                  </MDBCardBody>
+                </Card>
+              </CardContainer>
+            ))}
           </MDBRow>
         </MDBCol>
         <MDBCol lg="5">
