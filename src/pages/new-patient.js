@@ -4,9 +4,7 @@ import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Hero from "../components/AboutUs/Hero";
-import About from "../components/AboutUs/About";
-import Dr from "../components/AboutUs/Dr";
+import Pat from "../components/NewPat/Pat";
 
 export const Root = styled.div`
   font-family: "sofia-pro", Sans-serif;
@@ -30,17 +28,15 @@ export const Root = styled.div`
   }
 `;
 
-const AboutUs = () => (
+const NewPat = () => (
   <Layout>
-    <SEO title="About Us" />
-
+    <SEO title="New Patients" />
     <Root className="my-5">
-      <h2>About us</h2>
+      <h2>New Patients</h2>
       <hr />
-      <About />
+      <Pat />
     </Root>
-    <Dr />
   </Layout>
 );
 
-export default AboutUs;
+export default NewPat;
