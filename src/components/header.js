@@ -202,19 +202,19 @@ const Header = ({ siteTitle }) => {
   const serviceLink = [
     {
       title: "Functional Medicine",
-      link: "/services/functional-medicine"
+      link: "/functional-medicine"
     },
     {
       title: "INDIGO Quantum Biofeedback",
-      link: "/services/indigo"
+      link: "/indigo"
     },
     {
       title: "Stress & Energy Management/Healing",
-      link: "/services/stress-energy-healing"
+      link: "/stress-energy-healing"
     },
     {
       title: "Detox Foot Bath",
-      link: "/services/detox-foot-bath"
+      link: "/detox-foot-bath"
     }
   ];
 

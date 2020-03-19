@@ -24,6 +24,14 @@ a {
   font-weight: 600;
 }
 
+
+@media screen and (max-width: 579px) {
+  h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.3em;
+  }
+}
 `;
 
 export const ImageContainer = styled(Image)`

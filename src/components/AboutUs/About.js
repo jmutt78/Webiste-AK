@@ -17,7 +17,12 @@ h3 {
     line-height: 1.6em;
     letter-spacing: 1px;
 }
+p {
+  color: #36454f;
+      font-size: 17px;
+      font-weight: 300;
 
+}
 `;
 
 export const ImageContainer = styled(Image)`
