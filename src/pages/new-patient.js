@@ -26,6 +26,11 @@ export const Root = styled.div`
     line-height: 1.3em;
     letter-spacing: 1.7px;
   }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 45px;
+    }
+  }
 `;
 
 const NewPat = () => (
