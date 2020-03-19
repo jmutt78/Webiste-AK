@@ -153,6 +153,13 @@ export const ButtonContainer = styled.div`
   }
 `;
 
+export const DiscContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+`;
+
 export default () => (
   <Root>
     <h3>Do you feel stuck in areas of your health?</h3>
@@ -210,5 +217,14 @@ export default () => (
         </Card>
       </RightContainer>
     </TextContainer>
+    <DiscContainer>
+      <p>
+        *DISCLAIMER: The services above do not claim and are not intended to
+        replace medical treatments, diagnose, cure, prevent, and treat any
+        specific medical, psychological or emotional disease or class of
+        diseases. We are stating that these harmonize the frequencies in and
+        around the body placing it in a state of optimum energy balance.
+      </p>
+    </DiscContainer>
   </Root>
 );
