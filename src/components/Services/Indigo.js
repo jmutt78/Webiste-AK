@@ -320,7 +320,7 @@ export default () => (
     </TextContainer>
     <DiscContainer>
       <p>
-        DISCLAIMER: No claims are made of the INDIGO system or its results and
+        *DISCLAIMER: No claims are made of the INDIGO system or its results and
         nothing that the INDIGO Practitioner does, diagnoses or treats any
         illness or disease nor replaces any other treatment. Please consult your
         family medical doctor for the diagnosis or treatment of disease. Please

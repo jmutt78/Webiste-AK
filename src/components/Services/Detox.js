@@ -312,12 +312,20 @@ export default () => (
 
     <DiscContainer>
       <p>
-        DISCLAIMER: No claims are made of the INDIGO system or its results and
-        nothing that the INDIGO Practitioner does, diagnoses or treats any
-        illness or disease nor replaces any other treatment. Please consult your
-        family medical doctor for the diagnosis or treatment of disease. Please
-        also consult your family medical doctor before undertaking any health
-        program.
+        *DISCLAIMER: This product is not a medical device. It is an experimental
+        cleansing device; it does not include any therapies or techniques
+        regulated by any state-licensed health care profession, nor is it
+        intended for the treatment or prevention of any disease or health
+        condition. Information contained, is solely for educational purposes and
+        is not intended to be prescriptive. None of the information provided is
+        intended to act as a substitute for counseling with your health care
+        professional, nor does it involve the diagnosis, prognosis or
+        prescription of remedies for the treatment or prevention of any illness,
+        disease or health condition. Before using this or any other experimental
+        device, you are advised to consult with a health care professional.
+        These statements have not been evaluated by the Food and Drug
+        Administration. This product is not intended to diagnose, treat, cure or
+        prevent disease.
       </p>
     </DiscContainer>
   </Root>

@@ -160,7 +160,7 @@ export default () => (
     </TextContainer>
     <DiscContainer>
       <p>
-        DISCLAIMER: The services above do not claim and are not intended to
+        *DISCLAIMER: The services above do not claim and are not intended to
         replace medical treatments, diagnose, cure, prevent, and treat any
         specific medical, psychological or emotional disease or class of
         diseases. We are stating that these harmonize the frequencies in and
