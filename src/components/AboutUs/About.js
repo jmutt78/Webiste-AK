@@ -62,11 +62,11 @@ export const ButtonContainer = styled.div`
 
 export default () => (
   <Root>
+    <ImageContainer src={store} rounded fluid />
     <h3>
       We are here to help raise our clients to a better state of being and
       health.
     </h3>
-    <ImageContainer src={store} rounded fluid />
     <RowContainer>
       <Col>
         <p>
