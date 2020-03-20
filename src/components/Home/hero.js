@@ -104,13 +104,7 @@ export const AboutContent = styled(Col)`
 export default () => (
   <Root>
     <Hero>
-      <h1>Your Health Starts Here.</h1>
+      <h1>Discover your Power in Health and Life</h1>
     </Hero>
   </Root>
 );
-
-//
-// <ButtonContainer>
-//   <Button variant="secondary">SEE HOW</Button>
-// </ButtonContainer>
-//
