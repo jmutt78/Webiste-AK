@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import { Button } from "react-bootstrap";
 
@@ -46,7 +47,9 @@ const Footer = () => {
             <h3>Reach a better, healthier, happier state of being.</h3>
           </CTAContainer>
           <ButtonContainer>
-            <Button variant="outline-secondary">BOOK NOW</Button>
+            <Link to="/book">
+              <Button variant="outline-secondary">BOOK NOW</Button>
+            </Link>
           </ButtonContainer>
         </TopContainer>
         <CollumnContainer>

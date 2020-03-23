@@ -294,7 +294,9 @@ const Header = ({ siteTitle }) => {
           ))}
         </Nav>
         <ButtonContainer>
-          <Button variant="outline-secondary">BOOK NOW</Button>
+          <Link to="/book">
+            <Button variant="outline-secondary">BOOK NOW</Button>
+          </Link>
         </ButtonContainer>
       </StyledNav>
     </header>

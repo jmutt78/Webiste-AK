@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 import { MDBContainer, MDBCard, MDBCardBody } from "mdbreact";
 
@@ -65,7 +66,9 @@ export default () => (
         </IconContainer>
         <h3>Book Your Appointment Now</h3>
         <ButtonContainer>
-          <Button variant="outline-secondary">BOOK NOW</Button>
+          <Link to="/book">
+            <Button variant="outline-secondary">BOOK NOW</Button>
+          </Link>
         </ButtonContainer>
       </MDBCardBody>
     </Card>

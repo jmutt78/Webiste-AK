@@ -168,7 +168,7 @@ export default () => (
           appointment or schedule an appointment or
         </h3>
         <ButtonContainer>
-          <Link to="/">
+          <Link to="/book">
             <Button variant="secondary">Book Now</Button>
           </Link>
         </ButtonContainer>

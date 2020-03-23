@@ -102,7 +102,11 @@ export const CardContainer = styled(MDBCol)`
 const cardArr = [
   {
     title: "Book Appointment",
-    content: <Button variant="outline-secondary">BOOK NOW</Button>,
+    content: (
+      <Link to="/book">
+        <Button variant="outline-secondary">BOOK NOW</Button>
+      </Link>
+    ),
     image: <Calendar />
   },
   {
