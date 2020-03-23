@@ -81,13 +81,3 @@ export const postQuery = graphql`
     }
   }
 `;
-
-// <Card
-//   image={post.featuredImage.sourceUrl}
-//   title={post.title}
-//   date={format(parseISO(post.date), "MMMM dd, yyyy")}
-//   slug={post.slug}
-//   uri={post.uri}
-//   alt={post.featuredImage.altText}
-//   excerpt={post.excerpt}
-// />

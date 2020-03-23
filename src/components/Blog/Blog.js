@@ -48,6 +48,11 @@ export const CardContainer = styled.div`
   width: 31.33%;
   margin-right: 1%;
   margin-left: 1%;
+  .cardio :hover {
+    border-radius: 4px;
+    box-shadow: 3px 7px 14px 0 rgba(0, 0, 0, 0.11);
+    margin-top: -30px;
+  }
 `;
 
 export const Card = styled.div`
@@ -108,17 +113,19 @@ export default ({ posts }) => (
       <Container>
         {posts.nodes.map(post => (
           <CardContainer key={post.id}>
-            <Link to={post.uri}>
-              <Card>
-                <Image image={post.featuredImage.sourceUrl} />
-                <Title>
-                  <h4>{post.title}</h4>
-                </Title>
-                <Author>
-                  <p>by {post.author.name}</p>
-                </Author>
-              </Card>
-            </Link>
+            <div className="cardio">
+              <Link to={post.slug}>
+                <Card>
+                  <Image image={post.featuredImage.sourceUrl} />
+                  <Title>
+                    <h4>{post.title}</h4>
+                  </Title>
+                  <Author>
+                    <p>by {post.author.name}</p>
+                  </Author>
+                </Card>
+              </Link>
+            </div>
           </CardContainer>
         ))}
       </Container>
