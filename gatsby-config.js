@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
+const wordpressUrl = `http://ihm.flywheelsites.com/graphql`;
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -11,6 +13,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `WPGraphql`,
+        fieldName: `wpgraphql`,
+        url: wordpressUrl
+      }
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
