@@ -42,6 +42,9 @@ export const Section = styled.div`
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -52,6 +55,10 @@ export const CardContainer = styled.div`
     border-radius: 4px;
     box-shadow: 3px 7px 14px 0 rgba(0, 0, 0, 0.11);
     margin-top: -30px;
+  }
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    padding-right: 0px;
   }
 `;
 
