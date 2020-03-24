@@ -9,7 +9,8 @@ module.exports = {
     title: ` Integrative Health Management`,
     description: `Adriana Krywiak DPM, CFMD, QBT/Functional Medicine/ Holistic or Alternative Therapies/North Olmsted, Oh`,
     author: `@justinmcintoshs`,
-    siteUrl: `https://adrianak.netlify.com/`
+    siteUrl: `https://adrianak.netlify.com/`,
+    image: "src/images/dr.jpeg"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
