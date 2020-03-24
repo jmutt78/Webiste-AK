@@ -10,7 +10,7 @@ module.exports = {
     description: `Adriana Krywiak DPM, CFMD, QBT/Functional Medicine/ Holistic or Alternative Therapies/North Olmsted, Oh`,
     author: `@justinmcintoshs`,
     siteUrl: `https://adrianak.netlify.com/`,
-    image: "src/images/dr.jpeg"
+    image: "/images/dr.jpeg"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
