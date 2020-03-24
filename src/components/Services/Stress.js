@@ -23,6 +23,13 @@ p {
       font-weight: 300;
 
 }
+
+ul {
+      color: #36454f;
+      font-size: 17px;
+      font-weight: 300;
+
+}
 `;
 
 export const ImageContainer = styled(Image)`
@@ -86,7 +93,6 @@ export const IntroContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  display: flex;
   margin-bottom: 40px;
   padding-bottom: 40px;
   justify-content: center;
@@ -104,58 +110,88 @@ export const DiscContainer = styled.div`
 export default () => (
   <Root>
     <ImageContainer src={stress} rounded fluid />
-    <IntroContainer>
-      <h3>
-        Stress is on the rise. How are you navigating through it? Is it having a
-        negative impact on you? Are you feeling anxious, fatigued, sick, getting
-        common colds frequently or other unresolved conditions? Do you suffer
-        from more severe ailments or conditions such as pain, fibromyalgia,
-        rheumatoid arthritis or allergies?
-      </h3>
-    </IntroContainer>
+
     <TextContainer>
+      <h3>Healing starts on the inside</h3>
       <p>
-        The energy of stress can cause the body to have decreased ability to
-        deal with disease and stress. You'd be surprised all the havoc it can
-        create in your body, in your life, and in your work. Stress and
-        emotional distresses can cause congestion your body, preventing it from
-        being able to detoxify and move through its normal functions as it is
-        designed to do. Over time this is often the cause of pain, many diseases
-        and other health conditions, both mental and physical.
+        Energy Healing involves evaluating your chakras, the energy centers also
+        known as chi centers. We all have them and they often get out of
+        balanced. Although this is not visible to the naked it is often felt.
+        Individuals with chronic conditions, diseases, frequent colds often have
+        decreased level of chi as compared to healthy individuals. Due to blocks
+        in their meridians (the energy “pipelines”) and congested chakras.
       </p>
       <p>
-        Here's the good news... it can all be addressed, improved, even
-        completely resolved with the techniques we utilize in our office. This
-        can all be improved through a very simple technique that decongests the
-        areas. It is life changing and can resolve any system or mindset.
+        Clearing and removing these blockages and clearing the congestion in the
+        chakras, allows the individual to increase their vitality, and energy,
+        have less pain, and slow the aging process.
       </p>
+      <p>
+        Stress affects each of us differently. Some mental and physical illness
+        as well as chronic conditions, can stem from childhood or past adult
+        traumas; that created negative emotional experiences. Unless we get to
+        the root cause of the issue, and work on resolving it, these conditions
+        may persist, even though all medical and homeopathic measures have been
+        used with suboptimal success.
+      </p>
+      <p>
+        Using a process called Parametis, we can untangle and resolve past
+        traumas and emotions that keep one stuck and therefore relieve on going
+        issues in the body.
+      </p>
+      <h3>Why is energy so important?</h3>
+      <p>
+        We are all energetic/electromagnetic beings. Your heart runs on an
+        electrical system all on its own; there’s the proof, if your skeptical.
+        Your energy is constantly in motion. It’s what drives you to get up
+        every day, and be active and connect with others; without it we cease to
+        exist, therefore it needs to be taken care of as well. Energy plays a
+        big role in our wellness and health. You know when you don’t have energy
+        and feel low.
+      </p>
+
+      <h3>How do I know if I have an energy block?</h3>
+
+      <div>
+        <ul>
+          <li>Excess worry</li>
+          <li>Depression</li>
+          <li>Fatigue</li>
+          <li>Anger</li>
+          <li>Resentment</li>
+          <li>Anxiety</li>
+          <li>
+            Experiencing a trauma such as loss of loved one, divorce, abuse etc
+          </li>
+        </ul>
+      </div>
+      <h3>What do these blockages cause?</h3>
+      <p>
+        Long standing blockages affect your organ systems including your,
+        stomach, intestines, heart, lungs, kidneys and thyroid and can cause
+        conditions such as arthritis; or fibromyalgia. Resolving the blockage
+        allows the organ system to start clearing and working properly.
+      </p>
+      <h3>How does this Energy Healing work?</h3>
       <p>
         The technique consists of a highly evolved and tested system of energy
         medicine that balances, harmonizes and transforms the body's energy
         process. It is a simple, yet powerful and effective system that is based
-        on the fundamental principles that the body is self-repairing living
-        entity that possess the ability to heal itself. It requires no drugs, no
-        gadgets not even physical contact with the subject. Stress energy is
-        actually absorbed into our organs, muscles and glands etc. The physical
-        ailments first appear as energetic disruptions around us and our
-        thoughts before it manifests in the body. This pervasive energy that
-        surrounds us will affect our emotions, our ability to handle stress,
+        on the fundamental principles that the body is a self-repairing living
+        entity that possesses the ability to heal itself. It requires no drugs,
+        no gadgets not even physical contact with the subject. Stress energy is
+        actually absorbed into our organs, muscles and glands etc.{" "}
+      </p>
+      <p>
+        Physical ailments first appear as energetic disruptions around us and
+        our thoughts, before manifesting in the body. This pervasive energy that
+        surrounds us will affect our emotions, our ability to handle stress, our
         relationships and even our finances. It's been noted that all aspects of
         life improve with this technique, even finances.
       </p>
       <p>
-        This energy healing method assists the efficacy of health care. You
-        probably already know that energy healing is on the rise and health and
-        wellness is on the forefront. According to studies, 40% of patients seek
-        alternative medicine as treatment.
-      </p>
-      <p>
-        If your feeling stuck, not getting any better in any aspects of your
-        life or health, feeling fatigued or not getting results from
-        medications, and going around and round without relief from a condition
-        or pain, fatigue or anxiety, this will help. Through a series of
-        sessions (3 at minimum must be done) we can clear the energy to help
-        dramatically improve every portion of your life.
+        Its very simple - you sit in a chair or lie down. There is no touching.
+        It takes approximately 45 min.
       </p>
     </TextContainer>
     <DiscContainer>
