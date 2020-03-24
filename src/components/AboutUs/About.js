@@ -71,38 +71,38 @@ export default () => (
       <Col>
         <p>
           Illness, stress, anxiety and negativity have increased with our
-          changing times. Many illnesses, body and health conditions, are caused
-          by emotions of bitterness in the soul and many life traumas and stress
-          can get stored in our organ systems. This can lead to illness, organ
-          dysfunction and isolated pain in areas of the body. Our body parts are
-          all connected and work as a whole. We seek to provide multidimensional
-          approaches and techniques to assists the whole body in healing from
-          pain, stress etc to a better state of being and thinking, with limited
-          medication use if possible.
+          changing times. Many health conditions, are caused by excess stress,
+          negative emotions and life traumas. Stress can get stored in our organ
+          systems. This can lead to illness, organ dysfunction and isolated pain
+          in areas of the body.
         </p>
 
         <p>
-          We take each patient individually and help assist him or her to change
-          mindset and use natural supplements to heal as a whole. When
-          perception and mindset change, all the circumstances in a person's
-          life change. Everything is energy and with the right energy all can
-          heal.
+          Our body parts are all connected and work as a whole. At Integrative
+          Health Management, we seek to provide multidimensional approaches,
+          services and techniques to assist the whole body in healing from pain
+          and stress to a better state of being, with limited medication use if
+          possible.
         </p>
         <p>
-          With the techniques and clearings we use one can experience
-          improvement of health, mentally clarity, life quality, decrease
-          anxiety, assist medication and supplements to work better and decrease
-          use of medication.
+          We consider each patient individually and help assist you to change
+          your mindset and use natural supplements to heal you as a whole being.
+          When perception and mindset change, all the circumstances in a
+          person's life change.
         </p>
-        <h3>
-          We will help you turn on the keys in you that will bring you to the
-          best and healthiest highest whole... that you already are!!
-        </h3>
-        <ButtonContainer>
-          <Link to="/contact-us">
-            <Button variant="secondary">Contact Us</Button>
-          </Link>
-        </ButtonContainer>
+        <p>
+          The programs we offer utilize Functional Medicine with specialized
+          testing, supplementations, Indigo Quantum biofeedback therapies and to
+          improve the lives of our patients.
+        </p>
+        <h4>Our clients experience</h4>
+        <ul>
+          <li>Improved health</li>
+          <li>Weight management</li>
+          <li>Mental clarity</li>
+          <li>Life quality</li>
+          <li>Decreased anxiety</li>
+        </ul>
       </Col>
     </RowContainer>
   </Root>

@@ -167,29 +167,33 @@ export default () => (
     <IntroContainer>
       <h3>
         Are you obtaining many diagnostic studies and tests that show normal
-        results, but you still don't feel well?
+        results, but you still don't feel well? Do you have difficulty
+        controlling or losing weight?
       </h3>
     </IntroContainer>
     <TextContainer>
       <LeftContainer>
         <p>
-          Functional medicine is a newer approach to medicine that does not rely
-          on the use of many medications. It looks deeper into the root cause of
-          a disease. We often combine it with biofeedback and Energy
-          Management/Healing.
+          All symptoms of disease or other conditions have root cause somewhere
+          in the body. Traditional medicine uses medication to mask and relieve
+          symptoms without taking time to look at the true root cause.
+          Functional medicine is an approach to healthcare that does not rely on
+          the use of many medications. It looks deeper into the root cause of a
+          disease with a goal of discovering the root cause to alleviate the
+          symptoms.
         </p>
         <p>
-          During the initial session, we gather and review all past medical
-          history, test results, previous treatments, medications and diagnosis.
-          From there, we devise an alternative treatment plan that may include
-          different lab work that was not performed in the past to better help
-          find the cause for a condition. Very specific supplementation is then
-          recommended based on test results.
+          Functional medicine looks at the “Why” of your condition and gives you
+          control over your health. It looks at the body as a whole, physical
+          and emotional, to see where you have deficiencies, or need different
+          support.
         </p>
         <p>
-          First session is usually 1-2 hours. Follow up sessions are usually
-          done every 3-4 months after plan is initiated to evaluate progress of
-          improvements.
+          We help you change in habits and adjust nutritional components in your
+          diet, to help resolve the problem that may be the cause of your
+          symptoms. We often combine Functional Medicine with Biofeedback
+          Therapy and Energy Management/Healing. It’s the best way for doctors
+          and patients to work together.
         </p>
       </LeftContainer>
       <RightContainer>
@@ -217,6 +221,21 @@ export default () => (
         </Card>
       </RightContainer>
     </TextContainer>
+    <h3 style={{ paddingTop: "30px" }}>
+      The initial session is 60 minutes and will involve:
+    </h3>
+    <ul>
+      <li>
+        Gathering and review of all past medical history, test results, previous
+        treatments, medications and diagnosis.
+      </li>
+      <li>
+        Devising an alternative treatment plan that may include different lab
+        work that was not performed in the past to better help find the cause
+        for a condition.
+      </li>
+      <li>Suggestions of specific supplementations</li>
+    </ul>
     <DiscContainer>
       <p>
         *DISCLAIMER: The services above do not claim and are not intended to
