@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description;
 
   const url = site.siteMetadata.siteUrl;
-  const image = dr;
+  const image = `${site.siteMetadata.siteUrl}${dr}`;
   console.log(image);
   return (
     <Helmet
