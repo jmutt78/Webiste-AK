@@ -10,7 +10,6 @@ import CTA from "../components/Home/CTA";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
     <Hero />
     <About />
     <Services />
