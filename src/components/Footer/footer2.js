@@ -66,44 +66,79 @@ const Footer = () => {
           </HoursContainer>
           <ServicesContainer>
             <h4>Services</h4>
-            <a>Functional Medicine Evaluation</a>
-            <a>INDIGO Quantum Biofeedback</a>
-            <a>Stress & Energy Management/Healing</a>
-            <a>Detox Foot Bath</a>
+            <Link to="/functional-medicine">
+              Functional Medicine Evaluation
+            </Link>
+            <Link to="/indigo">INDIGO Quantum Biofeedback</Link>
+            <Link to="/stress-energy-healing">
+              Stress & Energy Management/Healing
+            </Link>
+            <Link to="/detox-foot-bath">Detox Foot Bath</Link>
           </ServicesContainer>
           <ServicesContainer>
-            <h4>Company</h4>
-            <a>About Us</a>
-            <a>Dr. Krywiak</a>
-            <a>Testimonials</a>
+            <h4>Links</h4>
+            <Link to="/about-us">About Us</Link>
+            <Link to="/testimonials">Testimonials</Link>
+            <Link to="/new-patient">New Patient</Link>
+            <Link to="/blog">Blog</Link>
           </ServicesContainer>
           <SocailContainer>
             <h4>Social</h4>
-            <FaceBook />
-            <Linkedin />
-            <Insta />
-            <Mail />
+            <a
+              href="https://www.facebook.com/dradrianak/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaceBook />
+            </a>
+            <a
+              href="https://www.instagram.com/ihmohio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/ihmohio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Insta />
+            </a>
+            <a href="mailto:drk@ihmohio.com">
+              <Mail />
+            </a>
           </SocailContainer>
         </CollumnContainer>
         <BottomContainer>
           <div className="left">
             <Phone />
-            <p>(440) 438-3138</p>
+            <a href="tel:440-438-3138">(440) 438-3138</a>
           </div>
           <div className="middle">
             <Mail />
-            <a>drk@ihmohio.com</a>
+            <a href="mailto:drk@ihmohio.com">drk@ihmohio.com</a>
           </div>
           <div className="right">
             <Compass />
-            <p>28873 Lorain Rd North Olmsted, OH 44070</p>
+            <a
+              href="https://goo.gl/maps/8zxBjHaoKRNAeKXg7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              28873 Lorain Rd North Olmsted, OH 44070
+            </a>
           </div>
         </BottomContainer>
         <FooterContainer>
           <p>© {getYear()} Integrative Health Management, LLC</p>
-          <p>
-            Powered by <a>JGM Sotware</a>
-          </p>
+          <a
+            href="https://jgmsoft.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by JGM Software
+          </a>
         </FooterContainer>
       </Root>
     </footer>

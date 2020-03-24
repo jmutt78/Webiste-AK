@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 
-import { Button, Row, Col, Image } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 
 import indigo from "../../images/indigo.jpg";
 import bio from "../../../downloads/biofeedback.pdf";
@@ -313,7 +312,7 @@ export default () => (
         or symptom changes to report.
       </p>
       <ButtonContainer>
-        <a href={bio} target="_blank">
+        <a href={bio} target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">Learn More</Button>
         </a>
       </ButtonContainer>

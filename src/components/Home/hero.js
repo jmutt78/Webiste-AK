@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Jumbotron, Button, Row, Col } from "react-bootstrap";
+import { Jumbotron, Row, Col } from "react-bootstrap";
 import hero from "../../images/hero.jpg";
 
 export const Root = styled.div`

@@ -33,6 +33,12 @@ export const Root = styled.section`
     line-height: 1.3em;
     letter-spacing: 1.7px;
   }
+
+  .mb-4,
+  .my-4 {
+    margin-top: -10px;
+    margin-bottom: 0px;
+  }
 `;
 
 export const Card = styled(MDBCard)`
@@ -112,7 +118,11 @@ const cardArr = [
   {
     title: "Visit Us",
     content: (
-      <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11969.885388320583!2d-81.940894!3d41.4072858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f79221f3c351936!2sAdriana%20Krywiak%20DPM%2C%20CFMD%2C%20QBT!5e0!3m2!1sen!2sus!4v1584478625048!5m2!1sen!2sus">
+      <a
+        href="https://goo.gl/maps/8zxBjHaoKRNAeKXg7"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         28873 Lorain Rd North Olmsted, OH 44070
       </a>
     ),

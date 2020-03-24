@@ -188,17 +188,6 @@ export const LinkContainer = styled.div`
 `;
 
 const Header = ({ siteTitle }) => {
-  const aboutLink = [
-    {
-      title: "Dr. Krywiak",
-      link: "/DrKrywiak"
-    },
-    {
-      title: "IHM",
-      link: "/ihm"
-    }
-  ];
-
   const serviceLink = [
     {
       title: "Functional Medicine",

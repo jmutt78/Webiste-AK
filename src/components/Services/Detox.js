@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 
-import { Button, Row, Col, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 import detox from "../../images/detox.jpg";
 

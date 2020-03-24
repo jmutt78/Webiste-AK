@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Pat from "../components/NewPat/Pat";
 
 export const Root = styled.div`
   font-family: "sofia-pro", Sans-serif;

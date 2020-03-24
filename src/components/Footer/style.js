@@ -237,7 +237,8 @@ export const BottomContainer = styled.div`
   border-top: 1px solid #8062c6;
   border-bottom: 1px solid #8062c6;
 
-  p {
+  a {
+    color: #36454f;
     margin-bottom: 0px;
     font-size: 16px;
     line-height: 18px;
@@ -307,7 +308,11 @@ export const FooterContainer = styled.div`
   align-items: center;
   border-top: 1px none rgba(190, 199, 195, 0.6);
   font-size: 14px;
-
+  a {
+    color: #36454f;
+    margin-bottom: 1.45rem;
+    font-size: 14px;
+  }
   @media (max-width: 575px) {
     flex-wrap: wrap;
     border-top-style: solid;

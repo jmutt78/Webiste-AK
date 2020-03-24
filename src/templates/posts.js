@@ -42,7 +42,6 @@ const Posts = props => {
     pageContext: { pageNumber, hasNextPage }
   } = props;
 
-  console.log(posts);
   return (
     <Layout>
       <SEO title="Blog" />

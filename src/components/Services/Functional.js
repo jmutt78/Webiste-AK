@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 
-import { Button, Row, Col, Image } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 
 import medical from "../../images/medicalEv.jpg";
 
@@ -205,6 +204,7 @@ export default () => (
               href="http://www.yourmedicaldetective.com/public/1090.cfm"
               target="_blank"
               class="button color"
+              rel="noopener noreferrer"
             >
               <Button variant="secondary">Watch Video</Button>
             </a>
@@ -214,6 +214,7 @@ export default () => (
               href="http://www.functionalmedicineuniversity.com/FunctionalMedicineArticle-May2013.pdf"
               target="_blank"
               class="button color"
+              rel="noopener noreferrer"
             >
               <Button variant="secondary">Read More</Button>
             </a>

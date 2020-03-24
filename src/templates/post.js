@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import { format, parseISO } from "date-fns";
-import { Image } from "react-bootstrap";
 
 import Layout from "../components/layout.js";
 import SEO from "../components/seo";
@@ -44,8 +43,8 @@ const Post = props => {
     }
   } = props;
 
-  const { title, content, date, slug, featuredImage } = post;
-
+  const { title, content, date, featuredImage } = post;
+  console.log(props);
   return (
     <Layout>
       <SEO title={title} />

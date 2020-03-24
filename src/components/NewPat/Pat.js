@@ -156,10 +156,6 @@ export const Card = styled.div`
 
 export default () => (
   <Root>
-    <h3>
-      We always welcome new patients and try to offer convenient appointment
-      times.
-    </h3>
     <ImageContainer src={clip} rounded fluid />
     <RowContainer>
       <Col>
@@ -204,7 +200,7 @@ export default () => (
         <a href={form} download>
           <Button variant="secondary">Registration Form</Button>
         </a>
-        <Link to="/">
+        <Link to="/privacy-policy">
           <Button variant="secondary">Privacy Policy</Button>
         </Link>
       </LeftContainer>

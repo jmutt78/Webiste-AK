@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-import clip from "../../images/clip.jpg";
-import form from "../../../downloads/new_patient_form.pdf";
-
 export const Root = styled.div`
   padding: 0 0 25px 0;
 h3 {

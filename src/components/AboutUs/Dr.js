@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Jumbotron, Button, Row, Col } from "react-bootstrap";
-
 import dr from "../../images/dr.jpeg";
 
 export const Root = styled.div`

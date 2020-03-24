@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 import { Button, Row, Col } from "react-bootstrap";
 
@@ -136,7 +137,8 @@ const services = [
                 do with bodily imbalances and dysfunctions rather than just treating
                 the symptoms with multiple medications.`,
     image: medical,
-    button: "Evaluation"
+    button: "Evaluation",
+    link: "/functional-medicine"
   },
   {
     title: "Indigo Quantum Biofeedback",
@@ -144,7 +146,8 @@ const services = [
 The initial session is approximately 1.5 hours. Follow up sessions are 1 hour.
 `,
     image: wellness,
-    button: "Indigo"
+    button: "Indigo",
+    link: "/indigo"
   },
   {
     title: "Stress & Energy Management/Healing",
@@ -152,7 +155,8 @@ The initial session is approximately 1.5 hours. Follow up sessions are 1 hour.
 The energy of stress can cause the body to have decreased ability to deal with disease and stress.
 `,
     image: stress,
-    button: "Healing"
+    button: "Healing",
+    link: "/stress-energy-healing"
   },
   {
     title: "Detox Foot Bath",
@@ -162,7 +166,8 @@ The energy of stress can cause the body to have decreased ability to deal with d
     radicals from the body as the probes work to help eradicate viruses,
     bacteria, fungus, and parasites.`,
     image: detox,
-    button: "Detox"
+    button: "Detox",
+    link: "/detox-foot-bath"
   }
 ];
 
@@ -181,7 +186,7 @@ services.forEach((a, i) => {
 const Services = () => {
   return (
     <Root>
-      {services.map(({ title, content, image, button, num }) => (
+      {services.map(({ title, content, image, button, num, link }) => (
         <ServiceRow key={title}>
           <ServiceContent num={num}>
             <ImageContainer image={image} />
@@ -190,7 +195,9 @@ const Services = () => {
             <h3>{title}</h3>
             <hr />
             <p>{content}</p>
-            <Button variant="secondary">Explore {button}</Button>
+            <Link to={link}>
+              <Button variant="secondary">Explore {button}</Button>
+            </Link>
           </ServiceContent>
         </ServiceRow>
       ))}
