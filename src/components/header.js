@@ -16,7 +16,11 @@ const StyledNav = styled(Navbar)`
   padding: 0.5em 1em;
   margin: 0 auto;
 
-
+.active {
+  color: #8062c6;
+  font-weight: 600;
+  background-color: white;
+}
 
   .dropdown-toggle.nav-link {
     display: block;
@@ -254,7 +258,9 @@ const Header = ({ siteTitle }) => {
             {serviceLink.map(({ title, link }) => (
               <Accordion.Collapse eventKey="1" key={title}>
                 <div className="menu-collapse">
-                  <Link to={link}>{title}</Link>
+                  <Link to={link} activeStyle={{ color: "#8062c6" }}>
+                    {title}
+                  </Link>
                 </div>
               </Accordion.Collapse>
             ))}
@@ -262,7 +268,9 @@ const Header = ({ siteTitle }) => {
           {otherLink.map(({ title, link }) => (
             <Accordion key={title}>
               <div className="acord">
-                <Link to={link}>{title}</Link>
+                <Link to={link} activeClassName="active">
+                  {title}
+                </Link>
               </div>
             </Accordion>
           ))}
@@ -272,13 +280,17 @@ const Header = ({ siteTitle }) => {
           <NavDropdown title="Our Services" id="basic-nav-dropdown">
             {serviceLink.map(({ title, link }) => (
               <NavDropdown.Item key={title}>
-                <Link to={link}>{title}</Link>
+                <Link to={link} activeStyle={{ color: "#8062c6" }}>
+                  {title}
+                </Link>
               </NavDropdown.Item>
             ))}
           </NavDropdown>
           {otherLink.map(({ title, link }) => (
             <LinkContainer key={title}>
-              <Link to={link}>{title}</Link>
+              <Link to={link} activeClassName="active">
+                {title}
+              </Link>
             </LinkContainer>
           ))}
         </Nav>
