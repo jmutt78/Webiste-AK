@@ -32,6 +32,7 @@ export const About = styled(Col)`
   }
 
   @media (max-width: 575px) {
+    width: 100%
     text-align: center;
     h2 {
       font-size: 30px;
@@ -46,6 +47,9 @@ export const AboutRow = styled(Row)`
   margin-left: auto;
   position: relative;
   max-width: 1140px;
+  @media (max-width: 575px) {
+    width: 100%;
+  }
 `;
 
 export const AboutContent = styled(Col)`
@@ -68,6 +72,7 @@ export const AboutContent = styled(Col)`
   }
 
   @media (max-width: 575px) {
+    min-width: 100%;
     margin: 0px 25px 0px 25px;
     p {
     font-size: 15px;

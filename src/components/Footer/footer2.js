@@ -75,6 +75,9 @@ const Footer = () => {
               Stress & Energy Management/Healing
             </Link>
             <Link to="/detox-foot-bath">Detox Foot Bath</Link>
+            <Link to="/pinpointe-laser-for-fungal-toenails">
+              PinPointe FootLaser for Fungal Toenails
+            </Link>
           </ServicesContainer>
           <ServicesContainer>
             <h4>Links</h4>
@@ -82,6 +85,7 @@ const Footer = () => {
             <Link to="/testimonials">Testimonials</Link>
             <Link to="/new-patient">New Patient</Link>
             <Link to="/blog">Blog</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </ServicesContainer>
           <SocailContainer>
             <h4>Social</h4>

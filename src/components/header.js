@@ -208,6 +208,10 @@ const Header = ({ siteTitle }) => {
     {
       title: "Detox Foot Bath",
       link: "/detox-foot-bath"
+    },
+    {
+      title: "PinPointe FootLaser for Fungal Toenails",
+      link: "/pinpointe-laser-for-fungal-toenails"
     }
   ];
 
