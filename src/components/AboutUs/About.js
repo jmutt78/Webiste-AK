@@ -101,7 +101,13 @@ export default () => (
           <li>Mental clarity</li>
           <li>Life quality</li>
           <li>Decreased anxiety</li>
+          <li>Better processing of medications and supplements</li>
+          <li>Decreased use of medications</li>
         </ul>
+        <h3>
+          We will help you turn on the keys in you that will bring you to the
+          best and healthiest highest whole... that you already are!!
+        </h3>
       </Col>
     </RowContainer>
   </Root>

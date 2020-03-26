@@ -57,10 +57,11 @@ const Footer = () => {
             <div className="wrapper">
               <h4>Hours of Operation</h4>
               <ul>
-                <li>Mon: 9AM - 5PM</li>
-                <li>Tues: 9AM - 5PM</li>
+                <li>Mon: 1:30PM - 6PM</li>
+                <li>Tues: 9AM - 1PM</li>
                 <li>Wed: 9AM - 5PM</li>
                 <li>Thurs: 9AM - 5PM</li>
+                <li>Fri: by appt only</li>
               </ul>
             </div>
           </HoursContainer>

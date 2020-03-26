@@ -131,6 +131,7 @@ const cardArr = [
   {
     title: "Call Us",
     content: <a href="tel:440-438-3138">(440) 438-3138</a>,
+    link2: <p>Fax: (440)438-3139</p>,
     image: <Phone />
   },
   {
@@ -150,13 +151,14 @@ const ContactUs = () => (
       <MDBRow>
         <MDBCol lg="6" className="lg-0 mb-4">
           <MDBRow>
-            {cardArr.map(({ title, content, image }) => (
+            {cardArr.map(({ title, content, image, link2 }) => (
               <CardContainer md="6" key={title}>
                 <Card>
                   <MDBCardBody>
                     <IconContainer>{image}</IconContainer>
                     <h3>{title}</h3>
                     <ButtonContainer>{content}</ButtonContainer>
+                    {link2 ? <ButtonContainer>{link2}</ButtonContainer> : null}
                   </MDBCardBody>
                 </Card>
               </CardContainer>

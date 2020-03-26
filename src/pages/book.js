@@ -39,10 +39,10 @@ const Book = () => (
       <h2>Schedule an Appointment</h2>
       <hr />
       <iframe
-        title="appt"
-        src="https://app.acuityscheduling.com/schedule.php?owner=16433921"
+        src="https://app.acuityscheduling.com/schedule.php?owner=16433921&location=Integrative%20Health%20Management%2C%2028873%20Lorain%20Road%2C%20North%20Olmsted%2C%20OH%2044070"
+        title="Schedule Appointment"
         width="100%"
-        height="1500px"
+        height="800"
         frameBorder="0"
       ></iframe>
       <script
