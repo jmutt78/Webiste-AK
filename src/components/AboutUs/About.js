@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Row, Col, Image } from "react-bootstrap";
-import store from "../../images/store.jpg";
+import dr from "../../images/dr.jpeg";
 
 export const Root = styled.div`
   padding: 0 0 25px 0;
@@ -61,7 +61,7 @@ export const ButtonContainer = styled.div`
 
 export default () => (
   <Root>
-    <ImageContainer src={store} rounded fluid />
+    <ImageContainer src={dr} rounded fluid />
     <h3>
       We are here to help raise our clients to a better state of being and
       health.
