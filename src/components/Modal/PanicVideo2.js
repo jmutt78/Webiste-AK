@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Modal } from "react-bootstrap";
 
@@ -65,6 +65,7 @@ export default ({ handleClose }) => {
     <Root>
       <Modal.Header closeButton></Modal.Header>
       <iframe
+        title="video"
         src="https://www.youtube.com/embed/QqXzgtZL6Xg"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
