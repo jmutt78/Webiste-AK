@@ -72,7 +72,7 @@ export const AboutContent = styled(Col)`
   }
 
   @media (max-width: 575px) {
-    min-width: 100%;
+    min-width: 90%;
     margin: 0px 25px 0px 25px;
     p {
     font-size: 15px;
