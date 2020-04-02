@@ -105,37 +105,11 @@ export const BioContentWrapper = styled.div`
   }
 `;
 
-const para1 = `Dr. Krywiak is a foot and ankle specialist and is a native of Ohio.
-She began her medical journey earning a Bachelor of Science degree
-in pre-med/biology at Notre Dame College of Ohio. Dr. Krywiak
-graduated from Ohio College of Podiatric Medicine and received
-surgical and non-surgical residency training at St. Vincent Charity
-Hospital's 3 year program started by the late Dr. Yu. Her training
-extends to include wound care. Extensive surgical training was
-conducted at more than 10 hospitals and surgical centers in downtown
-Cleveland, Akron and surrounding area. She has joined Premier
-Physicians in 2010.`;
+const para1 = `Dr. Krywiak is a foot and ankle specialist by training and is a native of Ohio. She began her medical journey earning a Bachelor of Science degree in pre-med/biology at Notre Dame College of Ohio.
+Dr. Krywiak graduated from Ohio College of Podiatric Medicine and received surgical and non-surgical residency training at St. Vincent Charity Hospital's 3 year. Her training extends to include wound care. Extensive surgical training was conducted at more than 10 hospitals and surgical centers in downtown Cleveland, Akron and surrounding area.`;
 
-const para2 = `Dr. Krywiak is a foot and ankle specialist and is a native of Ohio.
-She began her medical journey earning a Bachelor of Science degree
-in pre-med/biology at Notre Dame College of Ohio. Dr. Krywiak
-graduated from Ohio College of Podiatric Medicine and received
-surgical and non-surgical residency training at St. Vincent Charity
-Hospital's 3 year program started by the late Dr. Yu. Her training
-extends to include wound care. Extensive surgical training was
-conducted at more than 10 hospitals and surgical centers in downtown
-Cleveland, Akron and surrounding area. She has joined Premier
-Physicians in 2010.`;
-const para3 = `Dr. Krywiak is a foot and ankle specialist and is a native of Ohio.
-She began her medical journey earning a Bachelor of Science degree
-in pre-med/biology at Notre Dame College of Ohio. Dr. Krywiak
-graduated from Ohio College of Podiatric Medicine and received
-surgical and non-surgical residency training at St. Vincent Charity
-Hospital's 3 year program started by the late Dr. Yu. Her training
-extends to include wound care. Extensive surgical training was
-conducted at more than 10 hospitals and surgical centers in downtown
-Cleveland, Akron and surrounding area. She has joined Premier
-Physicians in 2010.`;
+const para2 = `Dr. Krywiak's passion has always been assisting people for life betterment. She has always had interest in a Mind, Body, Spirit approach and has now integrated this into her practice. She has been on a long mission noticing how stress affects the body. After study with many mentors, she has learned and been certified in techniques, approaches and higher level teachings, that help clear the stress and change energetics in the body so the body can heal more quickly.`;
+const para3 = `She became certified in Functional Medicine through Functional Medicine University in 2015, addressing the root causes of diseases and many other conditions. She is also certified In Energy Mastery from Energetic Solutions Inc, and body, auric clearings through Illumination Academy, which further allows her to address the stress of the body, past traumas and emotions of clients to dramatically improve well being and life force energy. She also has  been certified in Educator/Indigo Biofeedback Therapy to train and assist the body in healing itself of many systemic conditions, allergies, chronic pain, stress, emotions and trauma. She is also certified in homeopathic consulting through White Dove Global`;
 
 export default () => (
   <Root>
