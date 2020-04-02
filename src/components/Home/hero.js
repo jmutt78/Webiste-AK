@@ -41,9 +41,12 @@ export const Hero = styled(Jumbotron)`
     url(${hero});
   background-position: center;
   background-size: cover;
-  height: 100%;
+  background-repeat: no-repeat;
+
+  bottom: 50px;
+
   width: auto;
-  height: 800px;
+  height: 1400px;
 
   h1 {
     color: white;
@@ -54,6 +57,9 @@ export const Hero = styled(Jumbotron)`
     font-size: 74px;
     font-weight: 300;
     letter-spacing: 4.1px;
+  }
+  @media (max-width: 575px) {
+    height: 600px;
   }
 `;
 
