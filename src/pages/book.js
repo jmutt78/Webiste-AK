@@ -31,26 +31,38 @@ export const Root = styled.div`
     }
   }
 `;
+export const ModalStyle = styled.div`
+  height: 920px;
+  width: auto;
+  overflow: hidden;
+`;
 
-const Book = () => (
-  <Layout>
-    <SEO title="Schedule an Appointment" />
-    <Root className="my-5">
-      <h2>Schedule an Appointment</h2>
-      <hr />
-      <iframe
-        src="https://app.acuityscheduling.com/schedule.php?owner=16433921&location=Integrative%20Health%20Management%2C%2028873%20Lorain%20Road%2C%20North%20Olmsted%2C%20OH%2044070"
-        title="Schedule Appointment"
-        width="100%"
-        height="800"
-        frameBorder="0"
-      ></iframe>
-      <script
-        src="https://embed.acuityscheduling.com/js/embed.js"
-        type="text/javascript"
-      ></script>
-    </Root>
-  </Layout>
-);
+class Book extends React.Component {
+  componentDidMount() {
+    const head = document.querySelector("head");
+    const script = document.createElement("script");
+    script.setAttribute(
+      "src",
+      "https://assets.calendly.com/assets/external/widget.js"
+    );
+    head.appendChild(script);
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="Schedule an Appointment" />
+        <Root className="my-5">
+          <h2>Schedule an Appointment</h2>
+          <hr />
+          <ModalStyle
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/drk-3/60min"
+          />
+        </Root>
+      </Layout>
+    );
+  }
+}
 
 export default Book;
