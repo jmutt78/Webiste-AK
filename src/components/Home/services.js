@@ -8,6 +8,7 @@ import medical from "../../images/medicalEv.jpg";
 import stress from "../../images/stress.jpg";
 import detox from "../../images/detox.jpg";
 import wellness from "../../images/wellness.jpg";
+import foot from "../../images/foot.jpg";
 
 export const Root = styled.div`
   padding: 50px 0 50px 0;
@@ -168,6 +169,13 @@ The energy of stress can cause the body to have decreased ability to deal with d
     image: detox,
     button: "Detox",
     link: "/detox-foot-bath"
+  },
+  {
+    title: "PinPointe FootLaser for Fungal Toenails",
+    content: `Stop suffering the pain and embarrassment of unsightly nail fungus. PinPointe FootLaser is the easy and convenient procedure that helps turn your discolored and disfigured nails into clearer, healthier looking nails.`,
+    image: foot,
+    button: "PinPointe FootLaser",
+    link: "/pinpointe-laser-for-fungal-toenails"
   }
 ];
 

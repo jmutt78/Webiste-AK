@@ -83,18 +83,16 @@ export default () => (
   <Root>
     <AboutRow>
       <About>
-        <p>-About</p>
-        <h2>Our Approach</h2>
+        <h2>Our Approach and Mission</h2>
       </About>
       <AboutContent>
         <p>
-          We treat your body as a whole and this includes your foot
-          pain/conditions as well as your stress and emotions. Your emotional
-          state of being affects you physical health. These are connected. We
-          use very specific multidimensional, holistic approaches to help your
-          body heal and uplift you to the best place possible and keep you
-          there. We will work with you to heal and assist you make changes and
-          with this, all around you will change for the better.
+          Are you seeking amazing health, vitality and happiness? At Integrative
+          Health a Management, we get you back in control of all that you long
+          to change. We treat your body as a whole and this means your stress
+          and emotions. We use approaches to leave you feeling uplifted,
+          healthy, and to help keep you there. We will work with you to heal,
+          and all around you will see changes in your life for the better!
         </p>
       </AboutContent>
     </AboutRow>

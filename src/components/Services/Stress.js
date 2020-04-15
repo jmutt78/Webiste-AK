@@ -222,8 +222,8 @@ export default () => {
           Its very simple - you sit in a chair or lie down. There is no
           touching. It takes approximately 45 min.
         </p>
-        <h3>Panic Healing</h3>
-        <p>Check out these great resources from the experts on Pacic Healing</p>
+        <h3>Stress Energy Healing</h3>
+        <p>Check out these great resources from the experts on Panic Healing</p>
         <ButtonContainer>
           <Button variant="secondary" onClick={handleVideo1Show}>
             Watch Video

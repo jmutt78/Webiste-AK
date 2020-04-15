@@ -161,7 +161,7 @@ export default () => (
       <Col>
         <h3>
           Please <Link to="/contact-us">contact</Link> our office to schedule an
-          appointment or schedule an appointment or
+          appointment or
         </h3>
         <ButtonContainer>
           <Link to="/book">
@@ -179,12 +179,7 @@ export default () => (
           double-book our patients. New patients may require as much as 60
           minutes for their initial evaluation depending on their condition.
         </p>
-        <h4>Insurance Information</h4>
-        <p>
-          We participate in most insurance plans. Please feel free to{" "}
-          <Link to="/contact-us">contact</Link> our office to verify your
-          coverage.
-        </p>
+
         <h4>Patients Forms</h4>
         <p>
           Print and bring in your completed New Patient Information Forms or fax
@@ -208,7 +203,6 @@ export default () => (
         <Card>
           <ul>
             <h4>What to Bring to Your Appointment</h4>
-            <li>Insurance card</li>
             <li>Name of your other doctors</li>
             <li>
               List of all current allergies and medications for us to photocopy

@@ -182,7 +182,7 @@ export default () => (
           symptoms.
         </p>
         <p>
-          Functional medicine looks at the “Why” of your condition and gives you
+          Functional Medicine looks at the “Why” of your condition and gives you
           control over your health. It looks at the body as a whole, physical
           and emotional, to see where you have deficiencies, or need different
           support.
