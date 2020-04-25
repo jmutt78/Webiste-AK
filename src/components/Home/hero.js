@@ -60,6 +60,10 @@ export const Hero = styled(Jumbotron)`
   }
   @media (max-width: 575px) {
     height: 600px;
+
+    h1 {
+      font-size: 50px;
+    }
   }
 `;
 
