@@ -7,7 +7,7 @@ posts(
 first: $first
 after: $after
 where: {
-  categoryName: "blog"
+  categoryName: "IHMO"
 }
 ) {
   pageInfo {
@@ -20,7 +20,6 @@ where: {
     postId
     title
     author {
-
      name
    }
     featuredImage {
@@ -92,3 +91,5 @@ where: {
     });
   });
 };
+
+//for blog - change catagory name and change url

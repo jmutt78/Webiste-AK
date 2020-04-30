@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
-const wordpressUrl = `http://ihm.flywheelsites.com/graphql`;
+const wordpressUrl = `http://entra.flywheelsites.com/graphql`;
 
 module.exports = {
   siteMetadata: {

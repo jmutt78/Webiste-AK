@@ -20,7 +20,7 @@ module.exports = async ({ actions, graphql }) => {
             uri
             pageId
             title
-            isFrontPage
+
           }
         }
       }
@@ -63,3 +63,5 @@ module.exports = async ({ actions, graphql }) => {
     });
   });
 };
+
+//For page - add is isFrontPage below title
