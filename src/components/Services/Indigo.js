@@ -312,8 +312,8 @@ export default () => (
         or symptom changes to report.
       </p>
       <ButtonContainer>
-        <a href={bio} target="_blank" rel="noopener noreferrer">
-          <Button variant="secondary">Learn More</Button>
+        <a href={bio} download>
+          <Button variant="secondary">Biofeedback Form</Button>
         </a>
       </ButtonContainer>
     </TextContainer>

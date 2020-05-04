@@ -223,7 +223,10 @@ export default () => {
           touching. It takes approximately 45 min.
         </p>
         <h3>Stress Energy Healing</h3>
-        <p>Check out these great resources from the experts on Panic Healing</p>
+        <p>
+          Check out these great resources from the experts on Pranic Energy
+          Healing
+        </p>
         <ButtonContainer>
           <Button variant="secondary" onClick={handleVideo1Show}>
             Watch Video

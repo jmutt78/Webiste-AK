@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import { Button, Row, Col, Image } from "react-bootstrap";
 import clip from "../../images/clip.jpg";
 import form from "../../../downloads/new_patient_form.pdf";
+import consent from "../../../downloads/Consent Form.pdf";
 
 export const Root = styled.div`
   padding: 0 0 25px 0;
@@ -194,6 +195,9 @@ export default () => (
         </p>
         <a href={form} download>
           <Button variant="secondary">Registration Form</Button>
+        </a>
+        <a href={consent} download>
+          <Button variant="secondary">Consent Form</Button>
         </a>
         <Link to="/privacy-policy">
           <Button variant="secondary">Privacy Policy</Button>
