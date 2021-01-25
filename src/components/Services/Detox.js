@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Image } from "react-bootstrap";
+import { Image } from 'react-bootstrap';
 
-import detox from "../../images/detox.jpg";
+import detox from '../../images/detox.jpg';
 
 export const Root = styled.div`
   padding: 0 0 25px 0;
   h3 {
     color: #363636;
-    font-family: "sofia-pro", Sans-serif;
+    font-family: 'sofia-pro', Sans-serif;
     font-size: 26px;
     font-weight: 300;
     font-style: normal;
@@ -19,7 +19,7 @@ export const Root = styled.div`
 
   h4 {
     color: #363636;
-    font-family: "sofia-pro", Sans-serif;
+    font-family: 'sofia-pro', Sans-serif;
     font-size: 20px;
     font-weight: 300;
     font-style: normal;
@@ -88,7 +88,7 @@ export const ButtonContainer = styled.div`
     color: #fff;
     background-color: #8062c6 !important;
     margin: 0;
-    font-family: "Sf pro display", sans-serif;
+    font-family: 'Sf pro display', sans-serif;
     position: relative;
     font-size: 13px;
     font-weight: 700;
@@ -258,7 +258,7 @@ export default () => (
           <ul>
             <li>Increases its cell vitality</li>
             <li>Eliminates microorganisms</li>
-            <li>Boots energy</li>
+            <li>Boosts energy</li>
             <li>Balances body Ph acid/alkaline</li>
             <li>Eliminates viruses - flu</li>
             <li>Relaxes more</li>
