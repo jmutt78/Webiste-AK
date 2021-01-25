@@ -1,10 +1,10 @@
-import React from "react";
-import { graphql } from "gatsby";
-import styled from "styled-components";
-import { format, parseISO } from "date-fns";
+import React from 'react';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { format, parseISO } from 'date-fns';
 
-import Layout from "../components/layout.js";
-import SEO from "../components/seo";
+import Layout from '../components/layout.js';
+import SEO from '../components/seo';
 
 export const Root = styled.div`
   margin-left: auto;
@@ -36,26 +36,26 @@ export const Root = styled.div`
   }
 `;
 
-const Post = props => {
+const Post = (props) => {
   const {
     data: {
-      wpgraphql: { post }
-    }
+      wpgraphql: { post },
+    },
   } = props;
 
   const { title, content, date, featuredImage } = post;
-  console.log(props);
+
   return (
     <Layout>
       <SEO title={title} />
       <Root>
         <h1>{title}</h1>
         <img
-          src={featuredImage.sourceUrl}
-          alt={featuredImage.altText}
+          src={featuredImage.node.sourceUrl}
+          alt={featuredImage.node.altText}
           rounded
         />
-        <p className="date">{format(parseISO(date), "MMMM dd, yyyy")}</p>
+        <p className='date'>{format(parseISO(date), 'MMMM dd, yyyy')}</p>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Root>
     </Layout>
@@ -74,8 +74,10 @@ export const postQuery = graphql`
         uri
         date
         featuredImage {
-          altText
-          sourceUrl
+          node {
+            altText
+            sourceUrl
+          }
         }
       }
     }

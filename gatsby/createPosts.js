@@ -17,14 +17,20 @@ where: {
   nodes {
     id
     uri
+    slug
     postId
     title
     author {
-     name
+               node {
+            name
+          }
    }
     featuredImage {
-      altText
-      sourceUrl
+      node {
+        altText
+        sourceUrl
+      }
+
     }
   }
 }
@@ -37,18 +43,18 @@ where: {
   const blogPages = [];
   let pageNumber = 0;
 
-  const fetchPages = async varables =>
+  const fetchPages = async (varables) =>
     await graphql(GET_POSTS, varables).then(({ data }) => {
       const {
         wpgraphql: {
           posts: {
             nodes,
-            pageInfo: { hasNextPage, endCursor }
-          }
-        }
+            pageInfo: { hasNextPage, endCursor },
+          },
+        },
       } = data;
 
-      const nodeIds = nodes.map(node => node.postId);
+      const nodeIds = nodes.map((node) => node.postId);
       const postsTemplate = path.resolve(`./src/templates/posts.js`);
       const postsPath = !varables.after ? `/blog/` : `/blog/page/${pageNumber}`;
 
@@ -58,12 +64,12 @@ where: {
         context: {
           ids: nodeIds,
           pageNumber,
-          hasNextPage
+          hasNextPage,
         },
-        ids: nodeIds
+        ids: nodeIds,
       };
 
-      nodes.map(post => {
+      nodes.map((post) => {
         allPosts.push(post);
       });
       if (hasNextPage) {
@@ -73,23 +79,21 @@ where: {
       return allPosts;
     });
 
-  await fetchPages({ first: 12, after: null }).then(allPosts => {
+  await fetchPages({ first: 12, after: null }).then((allPosts) => {
     const postTemplate = path.resolve(`./src/templates/post.js`);
 
-    blogPages.map(page => {
-      console.log(`create post list: ${page.path}`);
+    blogPages.map((page) => {
+      console.log(`create post list: blog/${page.path}`);
       createPage(page);
     });
 
-    allPosts.map(post => {
-      console.log(`create page: ${post.uri}`);
+    allPosts.map((post) => {
+      console.log(`create page: ${post.slug}`);
       createPage({
-        path: `/${post.uri}`,
+        path: `blog/${post.slug}`,
         component: postTemplate,
-        context: post
+        context: post,
       });
     });
   });
 };
-
-//for blog - change catagory name and change url

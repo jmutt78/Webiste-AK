@@ -29,17 +29,17 @@ module.exports = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const allPages = [];
   // Create a function for getting pages
-  const fetchPages = async variables =>
+  const fetchPages = async (variables) =>
     await graphql(GET_PAGES, variables).then(({ data }) => {
       const {
         wpgraphql: {
           pages: {
             nodes,
-            pageInfo: { hasNextPage, endCursor }
-          }
-        }
+            pageInfo: { hasNextPage, endCursor },
+          },
+        },
       } = data;
-      nodes.map(page => {
+      nodes.map((page) => {
         allPages.push(page);
       });
       if (hasNextPage) {
@@ -49,16 +49,16 @@ module.exports = async ({ actions, graphql }) => {
     });
 
   // Map over all the pages and call createPage
-  await fetchPages({ first: 100, after: null }).then(allPages => {
+  await fetchPages({ first: 100, after: null }).then((allPages) => {
     const pageTemplate = path.resolve(`./src/templates/privacy-policy.js`);
 
-    allPages.map(page => {
+    allPages.map((page) => {
       if (page.isFrontPage === true) page.uri = ``;
       console.log(`create page: ${page.uri}`);
       createPage({
-        path: `/${page.uri}`,
+        path: `${page.uri}`,
         component: pageTemplate,
-        context: page
+        context: page,
       });
     });
   });

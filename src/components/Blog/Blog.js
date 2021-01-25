@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 export const Root = styled.div`
   padding: 0 0 25px 0;
@@ -78,7 +78,7 @@ export const Image = styled.div`
   height: 216px;
   border-radius: 4px;
   background-color: #f8f8ff;
-  background-image: url(${props => props.image});
+  background-image: url(${(props) => props.image});
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -115,12 +115,12 @@ export default ({ posts }) => (
   <Root>
     <Section>
       <Container>
-        {posts.nodes.map(post => (
+        {posts.nodes.map((post) => (
           <CardContainer key={post.id}>
-            <div className="cardio">
+            <div className='cardio'>
               <Link to={post.slug}>
                 <Card>
-                  <Image image={post.featuredImage.sourceUrl} />
+                  <Image image={post.featuredImage.node.sourceUrl} />
                   <Title>
                     <h4>{post.title}</h4>
                   </Title>
